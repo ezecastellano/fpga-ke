@@ -1,0 +1,6 @@
+MO multiplexor NULL multiplexor.v vlg31/multiplexor.bin 1315411198
+MO sumador NULL sumador.v vlg1F/sumador.bin 1315411198
+MO testSumadorSignoYMagnitud NULL testSumadorSignoYMagnitud.v vlg69/test_sumador_signo_y_magnitud.bin 1315411198
+MO signcircuit NULL signcircuit.v vlg74/signcircuit.bin 1315411198
+MO disp_mux NULL ../disp-mux.v vlg4D/disp__mux.bin 1315411198
+MO hex_to_sseg NULL ../hex-to-sseg.v vlg6C/hex__to__sseg.bin 1315411198

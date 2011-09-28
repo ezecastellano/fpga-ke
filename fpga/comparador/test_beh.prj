@@ -1,0 +1,4 @@
+verilog work "D:/fpga/comparador/comparador1.v"
+verilog work "D:/fpga/comparador/comparador.v"
+verilog work "D:/fpga/comparador/test.v"
+verilog work "C:/Xilinx/11.1/ISE/verilog/src/glbl.v"

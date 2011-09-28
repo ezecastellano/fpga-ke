@@ -1,0 +1,1 @@
+xst -ise "D:/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga/sumador/testSumadorSignoYMagnitud.syr" 

@@ -1,0 +1,72 @@
+Release 11.1 Map L.33 (nt)
+Xilinx Map Application Log File for Design 'contadorBinarioUniversal'
+
+Design Information
+------------------
+Command Line   : map -ise contadorBinarioUniversal.ise -intstyle ise -p
+xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o
+contadorBinarioUniversal_map.ncd contadorBinarioUniversal.ngd
+contadorBinarioUniversal.pcf 
+Target Device  : xc3s50
+Target Package : pq208
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.51 $
+Mapped Date    : Wed Sep 14 12:17:22 2011
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s50' is a WebPack part.
+WARNING:Security:42 - Your license support version '2010.04' for WebPack expires
+in -502 days.
+----------------------------------------------------------------------
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:             8 out of   1,536    1%
+  Number of 4 input LUTs:                49 out of   1,536    3%
+Logic Distribution:
+  Number of occupied Slices:             26 out of     768    3%
+    Number of Slices containing only related logic:      26 out of      26 100%
+    Number of Slices containing unrelated logic:          0 out of      26   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          49 out of   1,536    3%
+  Number of bonded IOBs:                 24 out of     124   19%
+  Number of BUFGMUXs:                     1 out of       8   12%
+
+Average Fanout of Non-Clock Nets:                3.90
+
+Peak Memory Usage:  145 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "contadorBinarioUniversal_map.mrp" for details.

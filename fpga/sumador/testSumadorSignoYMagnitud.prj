@@ -1,0 +1,6 @@
+verilog work "sumador.v"
+verilog work "signcircuit.v"
+verilog work "multiplexor.v"
+verilog work "../hex-to-sseg.v"
+verilog work "../disp-mux.v"
+verilog work "testSumadorSignoYMagnitud.v"

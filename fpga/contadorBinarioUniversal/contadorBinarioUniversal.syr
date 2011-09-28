@@ -1,0 +1,374 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Reading design: contadorBinarioUniversal.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "contadorBinarioUniversal.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "contadorBinarioUniversal"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-pq208
+
+---- Source Options
+Top Module Name                    : contadorBinarioUniversal
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : contadorBinarioUniversal.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "contadorBinarioUniversal.v" in library work
+Module <contadorBinarioUniversal> compiled
+No errors in compilation
+Analysis of file <"contadorBinarioUniversal.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <contadorBinarioUniversal> in library <work> with parameters.
+	N = "00000000000000000000000000001000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <contadorBinarioUniversal>.
+	N = 32'sb00000000000000000000000000001000
+Module <contadorBinarioUniversal> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <contadorBinarioUniversal>.
+    Related source file is "contadorBinarioUniversal.v".
+    Found 8-bit addsub for signal <r_next$share0000>.
+    Found 8-bit register for signal <r_reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <contadorBinarioUniversal> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <contadorBinarioUniversal> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block contadorBinarioUniversal, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : contadorBinarioUniversal.ngr
+Top Level Output File Name         : contadorBinarioUniversal
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 61
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 5
+#      LUT3                        : 9
+#      LUT4                        : 31
+#      LUT4_L                      : 4
+#      MUXF5                       : 10
+# FlipFlops/Latches                : 8
+#      FDC                         : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 13
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-4 
+
+ Number of Slices:                       26  out of    768     3%  
+ Number of Slice Flip Flops:              8  out of   1536     0%  
+ Number of 4 input LUTs:                 50  out of   1536     3%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    124    19%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.244ns (Maximum Frequency: 160.154MHz)
+   Minimum input arrival time before clock: 7.895ns
+   Maximum output required time after clock: 10.749ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.244ns (frequency: 160.154MHz)
+  Total number of paths / destination ports: 64 / 8
+-------------------------------------------------------------------------
+Delay:               6.244ns (Levels of Logic = 4)
+  Source:            r_reg_0 (FF)
+  Destination:       r_reg_5 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: r_reg_0 to r_reg_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.720   1.071  r_reg_0 (r_reg_0)
+     LUT4:I2->O            3   0.551   0.907  Maddsub_r_next_share0000_cy<1>11 (Maddsub_r_next_share0000_cy<1>)
+     MUXF5:S->O            4   0.621   0.943  Maddsub_r_next_share0000_cy<3>11 (Maddsub_r_next_share0000_cy<3>)
+     LUT4_L:I3->LO         1   0.551   0.126  Maddsub_r_next_share0000_cy<4>11 (Maddsub_r_next_share0000_cy<4>)
+     LUT4:I3->O            1   0.551   0.000  r_next<5>59 (r_next<5>)
+     FDC:D                     0.203          r_reg_5
+    ----------------------------------------
+    Total                      6.244ns (3.197ns logic, 3.047ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 166 / 8
+-------------------------------------------------------------------------
+Offset:              7.895ns (Levels of Logic = 6)
+  Source:            en (PAD)
+  Destination:       r_reg_5 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to r_reg_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            23   0.821   2.040  en_IBUF (en_IBUF)
+     LUT2:I0->O            6   0.551   1.198  r_next_and00001 (r_next_and0000)
+     LUT3:I1->O            1   0.551   0.000  Maddsub_r_next_share0000_cy<3>11_F (N49)
+     MUXF5:I0->O           4   0.360   0.943  Maddsub_r_next_share0000_cy<3>11 (Maddsub_r_next_share0000_cy<3>)
+     LUT4_L:I3->LO         1   0.551   0.126  Maddsub_r_next_share0000_cy<4>11 (Maddsub_r_next_share0000_cy<4>)
+     LUT4:I3->O            1   0.551   0.000  r_next<5>59 (r_next<5>)
+     FDC:D                     0.203          r_reg_5
+    ----------------------------------------
+    Total                      7.895ns (3.588ns logic, 4.307ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 24 / 10
+-------------------------------------------------------------------------
+Offset:              10.749ns (Levels of Logic = 3)
+  Source:            r_reg_3 (FF)
+  Destination:       min_tick (PAD)
+  Source Clock:      clk rising
+
+  Data Path: r_reg_3 to min_tick
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.720   1.342  r_reg_3 (r_reg_3)
+     LUT4:I0->O            1   0.551   1.140  min_tick_cmp_eq000012 (min_tick_cmp_eq000012)
+     LUT2:I0->O            1   0.551   0.801  min_tick_cmp_eq000026 (min_tick_OBUF)
+     OBUF:I->O                 5.644          min_tick_OBUF (min_tick)
+    ----------------------------------------
+    Total                     10.749ns (7.466ns logic, 3.283ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.50 secs
+ 
+--> 
+
+Total memory usage is 133664 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

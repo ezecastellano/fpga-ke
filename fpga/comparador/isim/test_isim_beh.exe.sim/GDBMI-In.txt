@@ -1,0 +1,156 @@
+1-ntrace -on
+2-ntrace -on
+3-target-exec-status
+4-target-exec-status
+5-var-evaluate-expression 27
+6-target-exec-status
+7-var-evaluate-expression 27
+8-ntrace-select -n 27 -on
+9-ntrace-select -n 28 -on
+10-ntrace-select -n 29 -on
+11-exec-continue -time 1000000
+12-target-exec-status
+13-var-evaluate-expression 27
+14-target-exec-status
+15-var-evaluate-expression 27
+16-target-exec-status
+17-var-evaluate-expression 28
+18-target-exec-status
+19-var-evaluate-expression 29
+20-target-exec-status
+21-target-exec-status
+22-target-exec-status
+23-var-evaluate-expression 27
+24-target-exec-status
+25-var-evaluate-expression 28
+26-target-exec-status
+27-var-evaluate-expression 29
+28-target-exec-status
+29-target-exec-status
+30-var-evaluate-expression 27
+31-target-exec-status
+32-var-evaluate-expression 28
+33-target-exec-status
+34-var-evaluate-expression 29
+35-target-exec-status
+36-target-exec-status
+37-var-evaluate-expression 27
+38-target-exec-status
+39-var-evaluate-expression 28
+40-target-exec-status
+41-var-evaluate-expression 29
+42-target-exec-status
+43-var-evaluate-expression 27
+44-target-exec-status
+45-var-evaluate-expression 28
+46-target-exec-status
+47-var-evaluate-expression 29
+48-target-exec-status
+49-var-evaluate-expression 27
+50-target-exec-status
+51-var-evaluate-expression 28
+52-target-exec-status
+53-var-evaluate-expression 29
+54-target-exec-status
+55-var-evaluate-expression 27
+56-target-exec-status
+57-var-evaluate-expression 28
+58-target-exec-status
+59-var-evaluate-expression 29
+60-target-exec-status
+61-var-evaluate-expression 27
+62-target-exec-status
+63-var-evaluate-expression 28
+64-target-exec-status
+65-var-evaluate-expression 29
+66-target-exec-status
+67-var-evaluate-expression 27
+68-target-exec-status
+69-var-evaluate-expression 28
+70-target-exec-status
+71-var-evaluate-expression 29
+72-target-exec-status
+73-var-evaluate-expression 27
+74-target-exec-status
+75-var-evaluate-expression 28
+76-target-exec-status
+77-var-evaluate-expression 29
+78-target-exec-status
+79-var-evaluate-expression 27
+80-target-exec-status
+81-var-evaluate-expression 28
+82-target-exec-status
+83-var-evaluate-expression 29
+84-target-exec-status
+85-var-evaluate-expression 27
+86-target-exec-status
+87-var-evaluate-expression 28
+88-target-exec-status
+89-var-evaluate-expression 29
+90-target-exec-status
+91-var-evaluate-expression 27
+92-target-exec-status
+93-var-evaluate-expression 28
+94-target-exec-status
+95-var-evaluate-expression 29
+96-target-exec-status
+97-var-evaluate-expression 27
+98-target-exec-status
+99-var-evaluate-expression 28
+100-target-exec-status
+101-var-evaluate-expression 29
+102-target-exec-status
+103-var-evaluate-expression 27
+104-target-exec-status
+105-var-evaluate-expression 28
+106-target-exec-status
+107-var-evaluate-expression 29
+108-target-exec-status
+109-var-evaluate-expression 27
+110-target-exec-status
+111-var-evaluate-expression 28
+112-target-exec-status
+113-var-evaluate-expression 29
+114-target-exec-status
+115-var-evaluate-expression 27
+116-target-exec-status
+117-var-evaluate-expression 28
+118-target-exec-status
+119-var-evaluate-expression 29
+120-target-exec-status
+121-var-evaluate-expression 27
+122-target-exec-status
+123-var-evaluate-expression 28
+124-target-exec-status
+125-var-evaluate-expression 29
+126-target-exec-status
+127-var-evaluate-expression 27
+128-target-exec-status
+129-var-evaluate-expression 28
+130-target-exec-status
+131-var-evaluate-expression 29
+132-target-exec-status
+133-var-evaluate-expression 27
+134-target-exec-status
+135-var-evaluate-expression 28
+136-target-exec-status
+137-var-evaluate-expression 29
+138-target-exec-status
+139-var-evaluate-expression 27
+140-target-exec-status
+141-var-evaluate-expression 28
+142-target-exec-status
+143-var-evaluate-expression 29
+144-target-exec-status
+145-var-evaluate-expression 27
+146-target-exec-status
+147-var-evaluate-expression 28
+148-target-exec-status
+149-var-evaluate-expression 29
+150-target-exec-status
+151-var-evaluate-expression 27
+152-target-exec-status
+153-var-evaluate-expression 28
+154-target-exec-status
+155-var-evaluate-expression 29
+156-gdb-exit

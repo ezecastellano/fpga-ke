@@ -1,0 +1,114 @@
+&"WARNING: A WEBPACK license was found.\n"
+(isim-gdb)
+&"WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.\n"
+(isim-gdb)
+&"WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.\n"
+(isim-gdb)
+&"This is a Lite version of ISim.\n"
+(isim-gdb)
+
+(isim-gdb)
+=elaboration-done,precision="-12"
+(isim-gdb)
+1^done
+(isim-gdb)
+2^done
+(isim-gdb)
+3^done,status="stopped",reason="run-complete",now="0"
+(isim-gdb)
+4^done,status="stopped",reason="run-complete",now="0"
+(isim-gdb)
+5^done,value="StX"
+(isim-gdb)
+6^done,status="stopped",reason="run-complete",now="0"
+(isim-gdb)
+7^done,value="StX"
+(isim-gdb)
+8^done,result=["28 0",""]
+(isim-gdb)
+9^done,result=["29 1",""]
+(isim-gdb)
+10^done,result=["30 0 4 2",""]
+(isim-gdb)
+11^done,result=["31 54",""]
+(isim-gdb)
+12^done,result=["32 55",""]
+(isim-gdb)
+13^done,result=["33 56",""]
+(isim-gdb)
+14^done,result=["34 57",""]
+(isim-gdb)
+15^done,result=["35 58",""]
+(isim-gdb)
+16^done,result=["36 59",""]
+(isim-gdb)
+17^done,result=["37 0 62 60",""]
+(isim-gdb)
+18^done,result=["27 0 53 22",""]
+(isim-gdb)
+19^running
+(isim-gdb)
+&"Simulator is doing circuit initialization process.\n"
+(isim-gdb)
+&"Finished circuit initialization process.\n"
+(isim-gdb)
+&"Stopped at time : 910 ns : File \"D:/FPGA/contadorBinarioUniversal/testbench2.v\" Line 80 \n"
+(isim-gdb)
+19*stopped,reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+20^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+21^done,value="St0"
+(isim-gdb)
+22^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+23^done,value="St0"
+(isim-gdb)
+24^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+25^done,value="St0"
+(isim-gdb)
+26^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+27^done,value="100"
+(isim-gdb)
+28^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+29^done,value="1"
+(isim-gdb)
+30^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+31^done,value="0"
+(isim-gdb)
+32^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+33^done,value="0"
+(isim-gdb)
+34^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+35^done,value="0"
+(isim-gdb)
+36^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+37^done,value="0"
+(isim-gdb)
+38^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+39^done,value="0"
+(isim-gdb)
+40^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+41^done,value="011"
+(isim-gdb)
+42^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+43^done,value="20"
+(isim-gdb)
+44^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+45^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+46^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)
+47^done,status="stopped",reason="vlog-stop",frame={file="D:/FPGA/contadorBinarioUniversal/testbench2.v",line="80"},now="910000",scope="40"
+(isim-gdb)

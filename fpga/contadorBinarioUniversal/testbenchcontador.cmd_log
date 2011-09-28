@@ -1,0 +1,8 @@
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 
+xst -ise "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.ise" -intstyle ise -ifn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.xst" -ofn "D:/FPGA/contadorBinarioUniversal/testbenchcontador.syr" 

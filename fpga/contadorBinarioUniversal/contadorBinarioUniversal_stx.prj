@@ -1,0 +1,2 @@
+verilog isim_temp "D:/FPGA/contadorBinarioUniversal/contadorBinarioUniversal.v"
+verilog isim_temp "C:/Xilinx/11.1/ISE/verilog/src/glbl.v"
