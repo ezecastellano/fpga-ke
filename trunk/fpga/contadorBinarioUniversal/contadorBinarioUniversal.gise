@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="contadorBinarioUniversal.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="contadorBinarioUniversal.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="contadorBinarioUniversal.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="contadorBinarioUniversal.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="contadorBinarioUniversal.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="contadorBinarioUniversal.ngd"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="contadorBinarioUniversal.ntrc_log"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="contadorBinarioUniversal.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="contadorBinarioUniversal.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="contadorBinarioUniversal.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contadorBinarioUniversal.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="contadorBinarioUniversal.ptwx"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="contadorBinarioUniversal.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="contadorBinarioUniversal.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="contadorBinarioUniversal.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="contadorBinarioUniversal.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="contadorBinarioUniversal.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="contadorBinarioUniversal.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="contadorBinarioUniversal.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="contadorBinarioUniversal.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="contadorBinarioUniversal.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contadorBinarioUniversal_beh.prj"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="contadorBinarioUniversal_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="contadorBinarioUniversal_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="contadorBinarioUniversal_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="contadorBinarioUniversal_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="contadorBinarioUniversal_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="contadorBinarioUniversal_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contadorBinarioUniversal_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contadorBinarioUniversal_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="contadorBinarioUniversal_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="contadorBinarioUniversal_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contadorBinarioUniversal_par.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contadorBinarioUniversal_stx.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="contadorBinarioUniversal_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="contadorBinarioUniversal_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="contadorBinarioUniversal_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BCD" xil_pn:name="contadorBinarioUniversal_xdb/cst.xbcd"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contadorBinarioUniversal_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="smartpreview.twr"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testContador_stx.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="testbenchcontador.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="testbenchcontador.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testbenchcontador.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="testbenchcontador.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="testbenchcontador.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testbenchcontador_stx.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="testbenchcontador_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="testbenchcontador_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1316013715" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1316013715">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316015599" xil_pn:in_ck="4777253371348967949" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1316015599">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="contadorBinarioUniversal.v"/>
+      <outfile xil_pn:name="testContador.v"/>
+      <outfile xil_pn:name="testbench2.v"/>
+      <outfile xil_pn:name="testbenchcontador.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013715" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5917217509834150101" xil_pn:start_ts="1316013715">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013715" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6478375917181639309" xil_pn:start_ts="1316013715">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013715" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-9163645023709279716" xil_pn:start_ts="1316013715">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013715" xil_pn:in_ck="4825091646232247929" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1316013715">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="contadorBinarioUniversal.v"/>
+      <outfile xil_pn:name="testContador.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013898" xil_pn:in_ck="4825091646232247929" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8027112170854536487" xil_pn:start_ts="1316013897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013899" xil_pn:in_ck="1609803197469448102" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="356395124268797872" xil_pn:start_ts="1316013898">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013344" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1316013344">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013344" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6478375917181639309" xil_pn:start_ts="1316013344">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013344" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-9163645023709279716" xil_pn:start_ts="1316013344">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013344" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1316013344">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013344" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5917217509834150101" xil_pn:start_ts="1316013344">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013344" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:start_ts="1316013344">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316014927" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2610861525973836738" xil_pn:start_ts="1316014927">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1316015568" xil_pn:in_ck="207820453718932537" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-4145990551133375764" xil_pn:start_ts="1316015565">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="contadorBinarioUniversal.ntrc_log"/>
+      <outfile xil_pn:name="testbenchcontador.cmd_log"/>
+      <outfile xil_pn:name="testbenchcontador.lso"/>
+      <outfile xil_pn:name="testbenchcontador.prj"/>
+      <outfile xil_pn:name="testbenchcontador.syr"/>
+      <outfile xil_pn:name="testbenchcontador.xst"/>
+      <outfile xil_pn:name="testbenchcontador_summary.html"/>
+      <outfile xil_pn:name="testbenchcontador_xst.xrpt"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013432" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6623366719050529721" xil_pn:start_ts="1316013431">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="contadorBinarioUniversal_xdb/cst.xbcd"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013440" xil_pn:in_ck="-8906851314868126531" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="957209436374177039" xil_pn:start_ts="1316013432">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013449" xil_pn:in_ck="-8906851314868126530" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6037968062645765743" xil_pn:start_ts="1316013440">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013474" xil_pn:in_ck="4999357337080789719" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-7517938493133389795" xil_pn:start_ts="1316013449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1316013474" xil_pn:in_ck="-8906851314868126662" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="9067365325683159964" xil_pn:start_ts="1316013472">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+  </transforms>
+
+</generated_project>

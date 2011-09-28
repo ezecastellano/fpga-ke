@@ -1,0 +1,9 @@
+Command line:
+   testbenchcontador_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+
+Wed Sep 14 12:53:43 2011
+
+
+ Elaboration Time: 0 sec

@@ -1,0 +1,27 @@
+Command line:
+   contadorBinarioUniversal_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+
+Wed Sep 14 12:25:00 2011
+
+
+ Elaboration Time: 0 sec
+
+ Current Memory Usage: 141.976 Meg
+
+ Total Signals          : 18
+ Total Nets             : 32
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 160
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 141.976 Meg
+
+Wed Sep 14 12:25:38 2011
+

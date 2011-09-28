@@ -1,0 +1,16 @@
+[Inputs]
+clk
+reset
+syn_clr
+load
+en
+up
+=d[7:0]=
+[Outputs]
+max_tick
+min_tick
+=q[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel contadorBinarioUniversal
+

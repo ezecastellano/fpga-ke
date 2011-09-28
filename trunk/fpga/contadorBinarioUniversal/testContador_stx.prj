@@ -1,0 +1,3 @@
+verilog isim_temp "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/contadorBinarioUniversal/contadorBinarioUniversal.v"
+verilog isim_temp "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/contadorBinarioUniversal/testContador.v"
+verilog isim_temp "C:/Xilinx/11.1/ISE/verilog/src/glbl.v"

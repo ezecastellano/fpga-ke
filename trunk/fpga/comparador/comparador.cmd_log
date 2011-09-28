@@ -1,0 +1,51 @@
+xst -ise "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.ise" -intstyle ise -ifn "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.xst" -ofn "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.syr" 
+xst -ise "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.ise" -intstyle ise -ifn "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.xst" -ofn "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.syr" 
+xst -ise "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.ise" -intstyle ise -ifn "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.xst" -ofn "//dc3.ad.dc.uba.ar/RedirectedFolders06/ecastellano/Desktop/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+map -ise "comparador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+xst -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -ifn "D:/fpga/comparador/comparador.xst" -ofn "D:/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 comparador.ngc comparador.ngd  
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+par -ise "comparador.ise" -w -intstyle ise -ol std -t 1 comparador_map.ncd comparador.ncd comparador.pcf 
+trce -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml comparador.twx comparador.ncd -o comparador.twr comparador.pcf 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+par -ise "comparador.ise" -w -intstyle ise -ol std -t 1 comparador_map.ncd comparador.ncd comparador.pcf 
+trce -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml comparador.twx comparador.ncd -o comparador.twr comparador.pcf 
+xst -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -ifn "D:/fpga/comparador/comparador.xst" -ofn "D:/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 comparador.ngc comparador.ngd  
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s100e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+xst -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -ifn "D:/fpga/comparador/comparador.xst" -ofn "D:/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-vq100-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+xst -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -ifn "D:/fpga/comparador/comparador.xst" -ofn "D:/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-ft256-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-ft256-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+xst -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -ifn "D:/fpga/comparador/comparador.xst" -ofn "D:/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-cp132-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-cp132-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+xst -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -ifn "D:/fpga/comparador/comparador.xst" -ofn "D:/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+par -ise "comparador.ise" -w -intstyle ise -ol std -t 1 comparador_map.ncd comparador.ncd comparador.pcf 
+trce -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml comparador.twx comparador.ncd -o comparador.twr comparador.pcf 
+xst -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -ifn "D:/fpga/comparador/comparador.xst" -ofn "D:/fpga/comparador/comparador.syr" 
+ngdbuild -ise "comparador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 comparador.ngc comparador.ngd  
+map -ise "comparador.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o comparador_map.ncd comparador.ngd comparador.pcf 
+par -ise "comparador.ise" -w -intstyle ise -ol std -t 1 comparador_map.ncd comparador.ncd comparador.pcf 
+trce -ise "D:/fpga/comparador/comparador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml comparador.twx comparador.ncd -o comparador.twr comparador.pcf 
+bitgen -ise "comparador.ise" -intstyle ise -f comparador.ut comparador.ncd 

@@ -1,0 +1,9 @@
+[Inputs]
+=a[1:0]=
+=b[1:0]=
+[Outputs]
+aeqb
+[BiDir]
+[ATTRIBUTES]
+VeriModel comparador
+
