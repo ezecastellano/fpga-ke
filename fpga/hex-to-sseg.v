@@ -9,6 +9,7 @@ module hex_to_sseg
    always @*
    begin
       case(hex)
+
          4'h0: sseg[6:0] = 7'b0000001;
          4'h1: sseg[6:0] = 7'b1001111;
          4'h2: sseg[6:0] = 7'b0010010;

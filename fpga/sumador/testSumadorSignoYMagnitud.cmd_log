@@ -1,1 +1,64 @@
 xst -ise "D:/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 
+xst -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -ifn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.xst" -ofn "D:/fpga2/fpga/sumador/testSumadorSignoYMagnitud.syr" 
+ngdbuild -ise "sumador.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd  
+map -ise "sumador.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ngd testSumadorSignoYMagnitud.pcf 
+par -ise "sumador.ise" -w -intstyle ise -ol std -t 1 testSumadorSignoYMagnitud_map.ncd testSumadorSignoYMagnitud.ncd testSumadorSignoYMagnitud.pcf 
+trce -ise "D:/fpga2/fpga/sumador/sumador.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml testSumadorSignoYMagnitud.twx testSumadorSignoYMagnitud.ncd -o testSumadorSignoYMagnitud.twr testSumadorSignoYMagnitud.pcf 
+bitgen -ise "sumador.ise" -intstyle ise -f testSumadorSignoYMagnitud.ut testSumadorSignoYMagnitud.ncd 

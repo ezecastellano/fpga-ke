@@ -4,13 +4,13 @@ Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: testSumadorSignoYMagnitud.prj
 
@@ -42,7 +42,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "testSumadorSignoYMagnitud"
 Output Format                      : NGC
-Target Device                      : xc3s50-4-pq208
+Target Device                      : xc3s200-4-ft256
 
 ---- Source Options
 Top Module Name                    : testSumadorSignoYMagnitud
@@ -312,39 +312,39 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : NO
 
 Design Statistics
-# IOs                              : 12
+# IOs                              : 30
 
 Cell Usage :
-# BELS                             : 62
+# BELS                             : 99
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 17
-#      LUT2                        : 2
-#      LUT3                        : 2
-#      LUT4                        : 1
+#      LUT2                        : 5
+#      LUT3                        : 16
+#      LUT4                        : 19
 #      MUXCY                       : 17
-#      MUXF5                       : 2
+#      MUXF5                       : 4
 #      VCC                         : 1
 #      XORCY                       : 18
 # FlipFlops/Latches                : 18
 #      FD                          : 18
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 11
-#      IBUF                        : 9
-#      OBUF                        : 2
+# IO Buffers                       : 29
+#      IBUF                        : 10
+#      OBUF                        : 19
 =========================================================================
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s50pq208-4 
+Selected Device : 3s200ft256-4 
 
- Number of Slices:                       12  out of    768     1%  
- Number of Slice Flip Flops:             18  out of   1536     1%  
- Number of 4 input LUTs:                 23  out of   1536     1%  
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    124     9%  
+ Number of Slices:                       31  out of   1920     1%  
+ Number of Slice Flip Flops:             18  out of   3840     0%  
+ Number of 4 input LUTs:                 58  out of   3840     1%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    173    17%  
  Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
@@ -381,8 +381,8 @@ Speed Grade: -4
 
    Minimum period: 4.978ns (Maximum Frequency: 200.884MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 9.188ns
-   Maximum combinational path delay: 11.368ns
+   Maximum output required time after clock: 9.314ns
+   Maximum combinational path delay: 19.099ns
 
 Timing Detail:
 --------------
@@ -429,58 +429,61 @@ Delay:               4.978ns (Levels of Logic = 18)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 5 / 2
+  Total number of paths / destination ports: 23 / 11
 -------------------------------------------------------------------------
-Offset:              9.188ns (Levels of Logic = 3)
+Offset:              9.314ns (Levels of Logic = 3)
   Source:            dm/q_reg_17 (FF)
-  Destination:       sseg (PAD)
+  Destination:       sseg<0> (PAD)
   Source Clock:      clk rising
 
-  Data Path: dm/q_reg_17 to sseg
+  Data Path: dm/q_reg_17 to sseg<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.720   1.112  dm/q_reg_17 (dm/q_reg_17)
-     LUT2:I1->O            1   0.551   0.000  dm/Mmux_sseg3972 (dm/Mmux_sseg3971)
-     MUXF5:I0->O           1   0.360   0.801  dm/Mmux_sseg397_f5 (sseg_OBUF)
-     OBUF:I->O                 5.644          sseg_OBUF (sseg)
+     FD:C->Q              13   0.720   1.238  dm/q_reg_17 (dm/q_reg_17)
+     LUT3:I2->O            1   0.551   0.000  dm/Mmux_sseg281_G (N20)
+     MUXF5:I1->O           1   0.360   0.801  dm/Mmux_sseg281 (sseg_0_OBUF)
+     OBUF:I->O                 5.644          sseg_0_OBUF (sseg<0>)
     ----------------------------------------
-    Total                      9.188ns (7.275ns logic, 1.913ns route)
-                                       (79.2% logic, 20.8% route)
+    Total                      9.314ns (7.275ns logic, 2.039ns route)
+                                       (78.1% logic, 21.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 10 / 1
+  Total number of paths / destination ports: 1021 / 14
 -------------------------------------------------------------------------
-Delay:               11.368ns (Levels of Logic = 6)
-  Source:            a<1> (PAD)
-  Destination:       sseg (PAD)
+Delay:               19.099ns (Levels of Logic = 9)
+  Source:            b<1> (PAD)
+  Destination:       sseg<6> (PAD)
 
-  Data Path: a<1> to sseg
+  Data Path: b<1> to sseg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.821   1.140  a_1_IBUF (a_1_IBUF)
-     LUT3:I0->O            1   0.551   0.000  dm/Mmux_sseg354_F (N7)
-     MUXF5:I0->O           1   0.360   1.140  dm/Mmux_sseg354 (dm/Mmux_sseg354)
-     LUT2:I0->O            1   0.551   0.000  dm/Mmux_sseg3972 (dm/Mmux_sseg3971)
-     MUXF5:I0->O           1   0.360   0.801  dm/Mmux_sseg397_f5 (sseg_OBUF)
-     OBUF:I->O                 5.644          sseg_OBUF (sseg)
+     IBUF:I->O            10   0.821   1.473  b_1_IBUF (b_1_IBUF)
+     LUT4:I0->O            1   0.551   1.140  sum/temp_2_cmp_gt00001_SW0 (N4)
+     LUT3:I0->O            4   0.551   0.917  sum/temp_2_cmp_gt00001 (sum/temp_2_cmp_gt0000)
+     MUXF5:S->O            1   0.621   0.869  mout2/Mmux_mout470_f5 (mout2/Mmux_mout470)
+     LUT4:I2->O            1   0.551   0.869  mout2/Mmux_mout494 (mout2/Mmux_mout494)
+     LUT4:I2->O            8   0.551   1.422  mout2/Mmux_mout4150 (mout<1>)
+     LUT3:I0->O            2   0.551   1.216  hextosseg/Mrom_hex_rom000061 (hextosseg/Mrom_hex_rom00006)
+     LUT3:I0->O            1   0.551   0.801  dm/Mmux_sseg81 (sseg_6_OBUF)
+     OBUF:I->O                 5.644          sseg_6_OBUF (sseg<6>)
     ----------------------------------------
-    Total                     11.368ns (8.287ns logic, 3.081ns route)
-                                       (72.9% logic, 27.1% route)
+    Total                     19.099ns (10.392ns logic, 8.707ns route)
+                                       (54.4% logic, 45.6% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.48 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.56 secs
  
 --> 
 
 Total memory usage is 133600 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
