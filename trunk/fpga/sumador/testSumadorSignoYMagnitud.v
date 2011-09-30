@@ -21,10 +21,11 @@
 module testSumadorSignoYMagnitud(
     input [3:0] a,
     input [3:0] b,
-    input btn,
+    input [1:0] btn,
     input clk,
-    output sseg,
-    output an
+    output [7:0] sseg,
+    output [3:0] an,
+	 output [6:0] salidaaux
     );
 
 	 wire [3:0] e0;
@@ -33,13 +34,14 @@ module testSumadorSignoYMagnitud(
 	 multiplexor mout2 (.m0(a), .m1(b), .m2(e0), .m3(e0), .btn(btn) , .mout(mout));
 	 
 	 wire [7:0] sseg2;
-	 hex_to_sseg hextosseg (.hex(mout[2:0]), .dp(0), .sseg(sseg2));
+	 hex_to_sseg hextosseg (.hex(mout[2:0]), .dp(1), .sseg(sseg2));
 	 
-	 wire e1;
+	 wire [7:0] e1;
 	 signcircuit c (.insign(mout[3]), .outsign(e1));
 	 
-	 disp_mux dm (.in3(0), .in2(0), .in1(e1), .in0(sseg2), .sseg(sseg), .an(an), .reset(0), .clk(clk));
+	 disp_mux dm (.in3(8'b11111111), .in2(8'b11111111), .in1(e1), .in0(sseg2), .sseg(sseg), .an(an), .reset(0), .clk(clk));
 	 
+	 assign salidaaux = sseg2[6:0];
 	  
 	 
 

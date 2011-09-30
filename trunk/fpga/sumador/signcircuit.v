@@ -23,7 +23,7 @@ module signcircuit(
     output [7:0] outsign
     );
 
-	assign outsign[7:1] = 7'b0000000;
-	assign outsign[0] = insign;
+	assign outsign[7:1] = 7'b1111111;
+	assign outsign[0] = ~insign;
 
 endmodule

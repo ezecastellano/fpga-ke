@@ -2,7 +2,7 @@ CommandLine-Map
 
 s
 CommandLine-Ngdbuild
-
+C:\Xilinx\11.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise sumador.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 testSumadorSignoYMagnitud.ngc testSumadorSignoYMagnitud.ngd
 s
 CommandLine-Par
 

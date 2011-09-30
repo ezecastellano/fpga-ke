@@ -29,38 +29,38 @@
       <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="testSumadorSignoYMagnitud.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="../disp-mux.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="../hex-to-sseg.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="multiplexor.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="signcircuit.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
     </file>
   </files>
 
   <properties>
     <property xil_pn:name="Auto Implementation Top" xil_pn:value="false"/>
     <property xil_pn:name="Constraints Entry" xil_pn:value="Constraints Editor"/>
-    <property xil_pn:name="Device" xil_pn:value="xc3s50"/>
+    <property xil_pn:name="Device" xil_pn:value="xc3s200"/>
     <property xil_pn:name="Device Family" xil_pn:value="Spartan3"/>
     <property xil_pn:name="Fitter Report Format" xil_pn:value="HTML"/>
     <property xil_pn:name="Implementation Top" xil_pn:value="Module|testSumadorSignoYMagnitud"/>
     <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/testSumadorSignoYMagnitud"/>
     <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Module|test"/>
     <property xil_pn:name="PROP_DesignName" xil_pn:value="sumador"/>
-    <property xil_pn:name="Package" xil_pn:value="pq208"/>
+    <property xil_pn:name="Package" xil_pn:value="ft256"/>
     <property xil_pn:name="Preferred Language" xil_pn:value="Verilog"/>
     <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="Module|sumador"/>
     <property xil_pn:name="Simulator" xil_pn:value="ISim (VHDL/Verilog)"/>
