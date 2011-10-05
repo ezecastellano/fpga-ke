@@ -22,9 +22,7 @@ module fsm(
 	input wire clk, reset,
 	input wire a, 
 	input wire b,
-	output reg tick,
-	output contador
-	
+	output reg [7:0] count_reg
 );
 // symbolic state declaration
 	localparam [3:0]
@@ -38,27 +36,37 @@ module fsm(
 	
 	// signal declaration
 	reg [3:0] state_reg, state_next;
+	reg [7:0] count_next;
 	// state register
 	always @(posedge clk, posedge reset)
 		if (reset)
-			state_reg <= zero;
+			state_reg <= e1;
 		else
 			state_reg <= state_next;
-			
-	
-	contador = 4'b0000;
-			
+
+	always @(posedge clk, posedge reset)
+		if (reset)
+			count_reg <= 0;
+		else
+			count_reg <= count_next;
+
+
+	//contadorBinarioUniversal cbu (.clk(clk),.reset(reset),.syn_clr(0),.load(0),.en(tick),.up(1),.d(0),.max_tick(max_tick),.q(cantidad_autos),.min_tick(min_tick));
+		
 	always @* 
-	begin state_next = state_reg; // default state: the same 
-	tick = 1'b0; // default output: 0 
+	begin 
+	state_next = state_reg; // default state: the same 
+	count_next = count_reg; // default state: the same 
 	case (state_reg) 
 		e1: 
 			begin
 				if (a) 
-					state_next = e2; 
+					state_next = e2;
 				else 
-					if (b)
-						state_next = e5; 
+					begin 
+						if (b)
+							state_next = e5; 
+					end
 			end
 		e2: 
 			begin
@@ -79,11 +87,15 @@ module fsm(
 		e4: 
 			begin
 				if (~a) 
-					state_next = e1; 
-					// se debe aumentar contador
+					begin
+						state_next = e1; 			// se debe aumentar contador
+						count_next = count_reg + 1;
+					end
 				else
-					if (b)
-						state_next = e3; 				
+					begin
+						if (b)
+							state_next = e3; 				
+					end
 			end
 		e5: 
 			begin
