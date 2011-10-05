@@ -1,0 +1,12 @@
+xst -ise "D:/FPGA-SVN/fpga/parquimetro/parquimetro.ise" -intstyle ise -ifn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.xst" -ofn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.syr" 
+xst -ise "D:/FPGA-SVN/fpga/parquimetro/parquimetro.ise" -intstyle ise -ifn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.xst" -ofn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.syr" 
+xst -ise "D:/FPGA-SVN/fpga/parquimetro/parquimetro.ise" -intstyle ise -ifn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.xst" -ofn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.syr" 
+ngdbuild -ise "parquimetro.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 parquimetrotop.ngc parquimetrotop.ngd  
+ngdbuild -ise "parquimetro.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 parquimetrotop.ngc parquimetrotop.ngd  
+map -ise "parquimetro.ise" -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o parquimetrotop_map.ncd parquimetrotop.ngd parquimetrotop.pcf 
+xst -ise "D:/FPGA-SVN/fpga/parquimetro/parquimetro.ise" -intstyle ise -ifn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.xst" -ofn "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.syr" 
+ngdbuild -ise "parquimetro.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-5 parquimetrotop.ngc parquimetrotop.ngd  
+map -ise "parquimetro.ise" -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o parquimetrotop_map.ncd parquimetrotop.ngd parquimetrotop.pcf 
+par -ise "parquimetro.ise" -w -intstyle ise -ol std -t 1 parquimetrotop_map.ncd parquimetrotop.ncd parquimetrotop.pcf 
+trce -ise "D:/FPGA-SVN/fpga/parquimetro/parquimetro.ise" -intstyle ise -v 3 -s 5 -fastpaths -xml parquimetrotop.twx parquimetrotop.ncd -o parquimetrotop.twr parquimetrotop.pcf -ucf s3.ucf 
+bitgen -ise "parquimetro.ise" -intstyle ise -f parquimetrotop.ut parquimetrotop.ncd 
