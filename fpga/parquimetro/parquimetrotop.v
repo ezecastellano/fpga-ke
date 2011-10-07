@@ -27,13 +27,13 @@ module parquimetrotop(
 
     );
 
-   wire [7:0] hex;
+   wire [3:0] hex;
 	fsm fff(.clk(clk), .reset(reset), .a(a), .b(b), .count_reg(hex));
 
 	wire [7:0] htss;
-	hex_to_sseg hts (.hex (hex[3:0]), .dp(0), .sseg(htss)); 
+	hex_to_sseg hts (.hex (hex), .dp(1), .sseg(htss)); 
 	
-	disp_mux dm (.clk(clk), .reset(reset), .in0(0), .in1(0), .in2(0), .in3(htss), .an(an), .sseg(count_sseg));
+	disp_mux dm (.clk(clk), .reset(reset), .in0(htss), .in1(7'b1111111), .in2(7'b1111111), .in3(7'b1111111), .an(an), .sseg(count_sseg));
 	
 
 

@@ -22,7 +22,7 @@ module fsm(
 	input wire clk, reset,
 	input wire a, 
 	input wire b,
-	output reg [7:0] count_reg
+	output reg [3:0] count_reg
 );
 // symbolic state declaration
 	localparam [3:0]
@@ -36,7 +36,7 @@ module fsm(
 	
 	// signal declaration
 	reg [3:0] state_reg, state_next;
-	reg [7:0] count_next;
+	reg [3:0] count_next;
 	// state register
 	always @(posedge clk, posedge reset)
 		if (reset)

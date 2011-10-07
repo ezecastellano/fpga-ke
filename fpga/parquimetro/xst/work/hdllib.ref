@@ -1,5 +1,5 @@
-MO parquimetrotop NULL parquimetrotop.v vlg54/parquimetrotop.bin 1317831216
-MO fsm NULL fsm.v vlg22/fsm.bin 1317831216
+MO parquimetrotop NULL parquimetrotop.v vlg54/parquimetrotop.bin 1317998149
+MO fsm NULL fsm.v vlg22/fsm.bin 1317998149
 MO contadorBinarioUniversal NULL ../contadorBinarioUniversal/contadorBinarioUniversal.v vlg73/contador_binario_universal.bin 1317827767
-MO disp_mux NULL ../disp-mux.v vlg4D/disp__mux.bin 1317831216
-MO hex_to_sseg NULL ../hex-to-ssegParq.v vlg6C/hex__to__sseg.bin 1317831216
+MO disp_mux NULL ../disp-mux.v vlg4D/disp__mux.bin 1317998149
+MO hex_to_sseg NULL ../hex-to-ssegParq.v vlg6C/hex__to__sseg.bin 1317998149
