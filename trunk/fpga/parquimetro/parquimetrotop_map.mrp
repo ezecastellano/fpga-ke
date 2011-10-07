@@ -10,7 +10,7 @@ Target Device  : xc3s200
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.51 $
-Mapped Date    : Wed Oct 05 13:13:42 2011
+Mapped Date    : Fri Oct 07 11:15:52 2011
 
 Design Summary
 --------------
@@ -36,9 +36,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                2.81
 
-Peak Memory Usage:  147 MB
-Total REAL time to MAP completion:  1 secs 
-Total CPU time to MAP completion:   0 secs 
+Peak Memory Usage:  148 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   1 secs 
 
 NOTES:
 
@@ -81,7 +81,7 @@ Section 1 - Errors
 Section 2 - Warnings
 --------------------
 WARNING:Security:42 - Your license support version '2010.04' for WebPack expires
-in -523 days.
+in -525 days.
 
 Section 3 - Informational
 -------------------------

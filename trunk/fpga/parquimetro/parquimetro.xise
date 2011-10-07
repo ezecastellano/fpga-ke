@@ -19,26 +19,26 @@
       <association xil_pn:name="BehavioralSimulation"/>
       <association xil_pn:name="Implementation"/>
     </file>
-    <file xil_pn:name="testparq3.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation"/>
-      <association xil_pn:name="PostTranslateSimulation"/>
-      <association xil_pn:name="PostMapSimulation"/>
-      <association xil_pn:name="PostRouteSimulation"/>
-    </file>
     <file xil_pn:name="../hex-to-ssegParq.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="s3.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="../disp-mux.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
     </file>
     <file xil_pn:name="parquimetrotop.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="Implementation"/>
       <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
+    </file>
+    <file xil_pn:name="testfinal.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="PostTranslateSimulation"/>
+      <association xil_pn:name="PostMapSimulation"/>
+      <association xil_pn:name="PostRouteSimulation"/>
     </file>
   </files>
 
@@ -49,11 +49,11 @@
     <property xil_pn:name="Fitter Report Format" xil_pn:value="HTML"/>
     <property xil_pn:name="Implementation Top" xil_pn:value="Module|parquimetrotop"/>
     <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/parquimetrotop"/>
-    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Module|testparq3"/>
+    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Module|testfinal"/>
     <property xil_pn:name="PROP_DesignName" xil_pn:value="parquimetro"/>
     <property xil_pn:name="Package" xil_pn:value="ft256"/>
     <property xil_pn:name="Preferred Language" xil_pn:value="Verilog"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="Module|testparq3"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="Module|testfinal"/>
     <property xil_pn:name="Simulator" xil_pn:value="ISim (VHDL/Verilog)"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-5"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)"/>

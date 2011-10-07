@@ -1,0 +1,6 @@
+verilog work "D:/FPGA-SVN/fpga/parquimetro/fsm.v"
+verilog work "D:/FPGA-SVN/fpga/hex-to-ssegParq.v"
+verilog work "D:/FPGA-SVN/fpga/disp-mux.v"
+verilog work "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.v"
+verilog work "D:/FPGA-SVN/fpga/parquimetro/testfinal.v"
+verilog work "C:/Xilinx/11.1/ISE/verilog/src/glbl.v"
