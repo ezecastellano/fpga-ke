@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+C:\Xilinx\11.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise fifo.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fifo_test.ngc fifo_test.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s
