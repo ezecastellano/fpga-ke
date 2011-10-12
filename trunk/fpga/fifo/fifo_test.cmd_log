@@ -1,0 +1,6 @@
+xst -ise "D:/fpga-ke usar este/fpga/fifo/fifo.ise" -intstyle ise -ifn "D:/fpga-ke usar este/fpga/fifo/fifo_test.xst" -ofn "D:/fpga-ke usar este/fpga/fifo/fifo_test.syr" 
+xst -ise "D:/fpga-ke usar este/fpga/fifo/fifo.ise" -intstyle ise -ifn "D:/fpga-ke usar este/fpga/fifo/fifo_test.xst" -ofn "D:/fpga-ke usar este/fpga/fifo/fifo_test.syr" 
+ngdbuild -ise "fifo.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 fifo_test.ngc fifo_test.ngd  
+map -ise "fifo.ise" -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o fifo_test_map.ncd fifo_test.ngd fifo_test.pcf 
+par -ise "fifo.ise" -w -intstyle ise -ol std -t 1 fifo_test_map.ncd fifo_test.ncd fifo_test.pcf 
+trce -ise "D:/fpga-ke usar este/fpga/fifo/fifo.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml fifo_test.twx fifo_test.ncd -o fifo_test.twr fifo_test.pcf 

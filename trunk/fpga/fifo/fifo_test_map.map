@@ -1,0 +1,83 @@
+Release 11.1 Map L.33 (nt)
+Xilinx Map Application Log File for Design 'fifo_test'
+
+Design Information
+------------------
+Command Line   : map -ise fifo.ise -intstyle ise -p xc3s50-pq208-4 -cm area -ir
+off -pr off -c 100 -o fifo_test_map.ncd fifo_test.ngd fifo_test.pcf 
+Target Device  : xc3s50
+Target Package : pq208
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.51 $
+Mapped Date    : Wed Oct 12 12:59:24 2011
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s50' is a WebPack part.
+WARNING:Security:42 - Your license support version '2010.04' for WebPack expires
+in -530 days.
+----------------------------------------------------------------------
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+WARNING:LIT:243 - Logical network fifo_unit/Mram_array_reg3/SPO has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 2
+   more times for the following (max. 5 shown):
+   fifo_unit/Mram_array_reg2/SPO,
+   fifo_unit/Mram_array_reg1/SPO
+   To see the details of these warning messages, please use the -detail switch.
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:             6 out of   1,536    1%
+  Number of 4 input LUTs:                20 out of   1,536    1%
+Logic Distribution:
+  Number of occupied Slices:             10 out of     768    1%
+    Number of Slices containing only related logic:      10 out of      10 100%
+    Number of Slices containing unrelated logic:          0 out of      10   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          20 out of   1,536    1%
+    Number used as logic:                14
+    Number used for Dual Port RAMs:       6
+      (Two LUTs used per Dual Port RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 15 out of     124   12%
+  Number of BUFGMUXs:                     1 out of       8   12%
+
+Average Fanout of Non-Clock Nets:                3.04
+
+Peak Memory Usage:  145 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   0 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "fifo_test_map.mrp" for details.
