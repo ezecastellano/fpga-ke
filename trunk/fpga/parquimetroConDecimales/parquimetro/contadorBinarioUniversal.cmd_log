@@ -1,1 +1,0 @@
-xst -ise "D:/FPGA-SVN/fpga/parquimetro/parquimetro.ise" -intstyle ise -ifn "D:/FPGA-SVN/fpga/parquimetro/contadorBinarioUniversal.xst" -ofn "D:/FPGA-SVN/fpga/parquimetro/contadorBinarioUniversal.syr" 

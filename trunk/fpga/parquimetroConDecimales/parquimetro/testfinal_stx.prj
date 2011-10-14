@@ -1,6 +1,0 @@
-verilog isim_temp "D:/FPGA-SVN/fpga/parquimetro/fsm.v"
-verilog isim_temp "D:/FPGA-SVN/fpga/hex-to-ssegParq.v"
-verilog isim_temp "D:/FPGA-SVN/fpga/disp-mux.v"
-verilog isim_temp "D:/FPGA-SVN/fpga/parquimetro/parquimetrotop.v"
-verilog isim_temp "D:/FPGA-SVN/fpga/parquimetro/testfinal.v"
-verilog isim_temp "C:/Xilinx/11.1/ISE/verilog/src/glbl.v"
