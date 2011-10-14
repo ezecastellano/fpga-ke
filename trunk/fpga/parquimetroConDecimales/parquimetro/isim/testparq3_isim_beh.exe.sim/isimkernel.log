@@ -1,0 +1,27 @@
+Command line:
+   testparq3_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+
+Wed Oct 05 12:19:57 2011
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 141.914 Meg
+
+ Total Signals          : 14
+ Total Nets             : 21
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 158
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 141.914 Meg
+
+Wed Oct 05 12:20:12 2011
+

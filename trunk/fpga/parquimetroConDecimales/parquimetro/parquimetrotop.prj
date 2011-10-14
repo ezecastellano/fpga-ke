@@ -1,0 +1,4 @@
+verilog work "fsm.v"
+verilog work "../hex-to-ssegParq.v"
+verilog work "../disp-mux.v"
+verilog work "parquimetrotop.v"
