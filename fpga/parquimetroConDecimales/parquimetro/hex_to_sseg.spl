@@ -1,9 +1,0 @@
-[Inputs]
-dp
-=hex[3:0]=
-[Outputs]
-=sseg[7:0]=
-[BiDir]
-[ATTRIBUTES]
-VeriModel hex_to_sseg
-
