@@ -1,7 +1,7 @@
 Release 11.1 par L.33 (nt)
 Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
 
-WS14LAB04::  Fri Oct 07 11:15:57 2011
+WS14LAB04::  Fri Oct 21 11:47:23 2011
 
 par -ise parquimetro.ise -w -intstyle ise -ol std -t 1 parquimetrotop_map.ncd
 parquimetrotop.ncd parquimetrotop.pcf 
@@ -12,7 +12,7 @@ Loading device for application Rf_Device from file '3s200.nph' in environment C:
    "parquimetrotop" is an NCD, version 3.2, device xc3s200, package ft256, speed -5
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s200' is a WebPack part.
-WARNING:Security:42 - Your license support version '2010.04' for WebPack expires in -525 days.
+WARNING:Security:42 - Your license support version '2010.04' for WebPack expires in -539 days.
 
 ----------------------------------------------------------------------
 
@@ -46,8 +46,8 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    Standard 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
 
 
 Starting Placer
@@ -55,33 +55,33 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:bdcee970) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:bd9f8837) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:bdcee970) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:bd9f8837) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:bdcee970) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:bd9f8837) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:c2968b70) REAL time: 2 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:c2672a37) REAL time: 1 secs 
 
 Phase 5.8  Global Placement
 ..
 ..
-Phase 5.8  Global Placement (Checksum:238d16e7) REAL time: 3 secs 
+Phase 5.8  Global Placement (Checksum:252a2568) REAL time: 2 secs 
 
 Phase 6.5  Local Placement Optimization
-Phase 6.5  Local Placement Optimization (Checksum:238d16e7) REAL time: 3 secs 
+Phase 6.5  Local Placement Optimization (Checksum:252a2568) REAL time: 2 secs 
 
 Phase 7.18  Placement Optimization
-Phase 7.18  Placement Optimization (Checksum:29ae10bc) REAL time: 3 secs 
+Phase 7.18  Placement Optimization (Checksum:2b508080) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:29ae10bc) REAL time: 3 secs 
+Phase 8.5  Local Placement Optimization (Checksum:2b508080) REAL time: 2 secs 
 
-Total REAL time to Placer completion: 3 secs 
+Total REAL time to Placer completion: 2 secs 
 Total CPU  time to Placer completion: 2 secs 
 Writing design to file parquimetrotop.ncd
 
@@ -90,25 +90,27 @@ Writing design to file parquimetrotop.ncd
 Starting Router
 
 
-Phase  1  : 168 unrouted;      REAL time: 4 secs 
+Phase  1  : 167 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 152 unrouted;      REAL time: 4 secs 
+Phase  2  : 151 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 41 unrouted;      REAL time: 4 secs 
+Phase  3  : 37 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 42 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 38 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: parquimetrotop.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Total REAL time to Router completion: 4 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+
+Total REAL time to Router completion: 3 secs 
 Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
@@ -144,8 +146,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.564ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.887ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.664ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.876ns|            |       0|           0
 ------------------------------------------------------------------------------------------------------
 
 
@@ -158,7 +160,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 4 secs 
 Total CPU time to PAR completion: 4 secs 
 
 Peak Memory Usage:  127 MB
