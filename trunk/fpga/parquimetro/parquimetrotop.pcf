@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map L.33 on Fri Oct 07 11:15:55 2011
+// Written by: Map L.33 on Fri Oct 21 11:47:21 2011
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,7 +15,7 @@ COMP "count_sseg<3>" LOCATE = SITE "P15" LEVEL 1;
 COMP "count_sseg<4>" LOCATE = SITE "N15" LEVEL 1;
 COMP "count_sseg<5>" LOCATE = SITE "G13" LEVEL 1;
 COMP "count_sseg<6>" LOCATE = SITE "E14" LEVEL 1;
-COMP "count_sseg<7>" LOCATE = SITE "K12" LEVEL 1;
+COMP "count_sseg<7>" LOCATE = SITE "P16" LEVEL 1;
 COMP "reset" LOCATE = SITE "L14" LEVEL 1;
 COMP "a" LOCATE = SITE "M13" LEVEL 1;
 COMP "b" LOCATE = SITE "M14" LEVEL 1;

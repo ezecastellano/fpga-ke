@@ -21,6 +21,12 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="contadorBinarioUniversal.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="contadorBinarioUniversal.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="contadorBinarioUniversal.ngc"/>
@@ -205,85 +211,101 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1317831214" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5769526018466025154" xil_pn:start_ts="1317831214">
+    <transform xil_pn:end_ts="1319208430" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5769526018466025154" xil_pn:start_ts="1319208430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1317998152" xil_pn:in_ck="6947519683109889751" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="8662750007461161480" xil_pn:start_ts="1317998145">
+    <transform xil_pn:end_ts="1319208435" xil_pn:in_ck="6947519683109889751" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="8662750007461161480" xil_pn:start_ts="1319208430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="fsm.ngr"/>
+      <outfile xil_pn:name="parquimetro.ntrc_log"/>
+      <outfile xil_pn:name="parquimetrotop.cmd_log"/>
+      <outfile xil_pn:name="parquimetrotop.lso"/>
+      <outfile xil_pn:name="parquimetrotop.ngc"/>
+      <outfile xil_pn:name="parquimetrotop.ngr"/>
+      <outfile xil_pn:name="parquimetrotop.prj"/>
+      <outfile xil_pn:name="parquimetrotop.stx"/>
+      <outfile xil_pn:name="parquimetrotop.syr"/>
+      <outfile xil_pn:name="parquimetrotop.xst"/>
+      <outfile xil_pn:name="parquimetrotop_summary.html"/>
+      <outfile xil_pn:name="parquimetrotop_xst.xrpt"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1317831180" xil_pn:in_ck="4562836050" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5711548755446747214" xil_pn:start_ts="1317831179">
+    <transform xil_pn:end_ts="1319208435" xil_pn:in_ck="4562836050" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5711548755446747214" xil_pn:start_ts="1319208435">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="parquimetro_xdb/cst.xbcd"/>
     </transform>
-    <transform xil_pn:end_ts="1317996948" xil_pn:in_ck="4495279064394486241" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8120970780879557287" xil_pn:start_ts="1317996943">
+    <transform xil_pn:end_ts="1319208439" xil_pn:in_ck="4495279064394486241" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8120970780879557287" xil_pn:start_ts="1319208435">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="parquimetrotop.bld"/>
+      <outfile xil_pn:name="parquimetrotop.cmd_log"/>
+      <outfile xil_pn:name="parquimetrotop.ngd"/>
+      <outfile xil_pn:name="parquimetrotop_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1317996956" xil_pn:in_ck="1362017072207683858" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3855906223012716089" xil_pn:start_ts="1317996948">
+    <transform xil_pn:end_ts="1319208442" xil_pn:in_ck="1362017072207683858" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3855906223012716089" xil_pn:start_ts="1319208439">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="parquimetrotop.pcf"/>
+      <outfile xil_pn:name="parquimetrotop_map.map"/>
+      <outfile xil_pn:name="parquimetrotop_map.mrp"/>
+      <outfile xil_pn:name="parquimetrotop_map.ncd"/>
+      <outfile xil_pn:name="parquimetrotop_map.ngm"/>
+      <outfile xil_pn:name="parquimetrotop_map.xrpt"/>
+      <outfile xil_pn:name="parquimetrotop_summary.xml"/>
+      <outfile xil_pn:name="parquimetrotop_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1317996965" xil_pn:in_ck="4916333037610212356" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="2371379123664853354" xil_pn:start_ts="1317996956">
+    <transform xil_pn:end_ts="1319208449" xil_pn:in_ck="4916333037610212356" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="2371379123664853354" xil_pn:start_ts="1319208442">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="parquimetrotop.ncd"/>
+      <outfile xil_pn:name="parquimetrotop.pad"/>
+      <outfile xil_pn:name="parquimetrotop.par"/>
+      <outfile xil_pn:name="parquimetrotop.ptwx"/>
+      <outfile xil_pn:name="parquimetrotop.unroutes"/>
+      <outfile xil_pn:name="parquimetrotop.xpi"/>
+      <outfile xil_pn:name="parquimetrotop_pad.csv"/>
+      <outfile xil_pn:name="parquimetrotop_pad.txt"/>
+      <outfile xil_pn:name="parquimetrotop_par.xrpt"/>
+      <outfile xil_pn:name="smartpreview.twr"/>
     </transform>
-    <transform xil_pn:end_ts="1317831240" xil_pn:in_ck="-8341829688082252337" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="8793582814929668914" xil_pn:start_ts="1317831237">
+    <transform xil_pn:end_ts="1319208453" xil_pn:in_ck="-8368592001986020168" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="8793582814929668914" xil_pn:start_ts="1319208449">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="device_usage_statistics.html"/>
+      <outfile xil_pn:name="parquimetrotop.bgn"/>
+      <outfile xil_pn:name="parquimetrotop.bit"/>
+      <outfile xil_pn:name="parquimetrotop.drc"/>
+      <outfile xil_pn:name="parquimetrotop.ut"/>
     </transform>
-    <transform xil_pn:end_ts="1317831261" xil_pn:in_ck="-8341829688082265191" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1317831260">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1317996965" xil_pn:in_ck="-4591897750485679862" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="9067365325683159965" xil_pn:start_ts="1317996964">
+    <transform xil_pn:end_ts="1319208461" xil_pn:in_ck="-8341829688082265191" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1319208459">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1319208449" xil_pn:in_ck="-4591897750485679862" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="9067365325683159965" xil_pn:start_ts="1319208448">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="parquimetrotop.twr"/>
+      <outfile xil_pn:name="parquimetrotop.twx"/>
     </transform>
   </transforms>
 

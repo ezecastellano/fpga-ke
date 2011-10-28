@@ -36,9 +36,9 @@
     </file>
     <file xil_pn:name="testfinal.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation"/>
-      <association xil_pn:name="PostTranslateSimulation"/>
-      <association xil_pn:name="PostMapSimulation"/>
       <association xil_pn:name="PostRouteSimulation"/>
+      <association xil_pn:name="PostMapSimulation"/>
+      <association xil_pn:name="PostTranslateSimulation"/>
     </file>
   </files>
 
