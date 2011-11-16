@@ -1,0 +1,28 @@
+module mod_m_counter
+# (
+parameter N=4, // number of b i t s in c o u n t e r
+M=326 // mod-M
+)
+(
+
+input wire clk, reset,
+output wire max_tick,
+output wire [N-1:0]q
+ );
+
+reg [N-1:0] r_reg;
+wire [N-1:0] r_next ;
+
+// body
+// r e g i s t e r
+always @ ( posedge clk , posedge reset )
+if (reset)
+ r_reg = 0 ;
+else
+r_reg = r_next;
+// n e x t - s t a t e l o g i c
+ assign r_next = (r_reg==(M-1)) ? 0 : r_reg + 1;
+// o u t p u t l o g i c
+assign q = r_reg;
+assign max_tick = (r_reg==(M-1)) ? 1'b1 : 1'b0;
+ endmodule
