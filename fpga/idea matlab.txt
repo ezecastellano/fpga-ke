@@ -15,7 +15,7 @@ close all;
 clc;
 
 PS=serial('COM1');
-set(PS,'Baudrate',9600); % se configura la velocidad a 9600 Baudios
+set(PS,'Baudrate',19200); % se configura la velocidad a 9600 Baudios
 set(PS,'StopBits',1); % se configura bit de parada a uno
 set(PS,'DataBits',8); % se configura que el dato es de 8 bits, debe estar entre 5 y 8
 set(PS,'Parity','none'); % se configura sin paridad
@@ -28,3 +28,7 @@ fopen(PS);
 
 
 http://toyscaos.tripod.com/serial.html
+
+
+
+
