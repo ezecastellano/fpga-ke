@@ -30,5 +30,7 @@ fopen(PS);
 http://toyscaos.tripod.com/serial.html
 
 
+http://toyscaos.tripod.com/serial3.html
+
 
 
