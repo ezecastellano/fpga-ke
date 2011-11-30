@@ -44,7 +44,7 @@ module ProcesadorDeImagenes(
       (.clk(clk), .reset(reset), .sw(btn),
        .db_level(), .db_tick(btn_tick));
    // incremented data loops back
-   assign rec_data1 = rec_data + 1;
+   assign rec_data1 = rec_data + 100;
    // LED display
    assign led = rec_data;
    assign an = 4'b1110;
