@@ -60,7 +60,7 @@ module sincro(
 						state_next = en_proceso; 				
 					end
 				default: 
-					state_next = esperando; 
+					state_next = state_reg; 
 			endcase 
 		end 
 

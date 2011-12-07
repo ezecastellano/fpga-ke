@@ -19,7 +19,7 @@ NET "btn"   LOC = "M14";
 #NET "btn<3>"  LOC = "L14";  #btn<3> also used as reset
 
 # 8 slide switches
-#NET "a<0>"  LOC = "F12";
+#NET "sw"  LOC = "F12";
 #NET "a<1>"  LOC = "G12";
 #NET "a<2>"  LOC = "H14";
 #NET "a<3>"  LOC = "H13";

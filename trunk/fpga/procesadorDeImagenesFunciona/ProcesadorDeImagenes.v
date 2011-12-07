@@ -31,28 +31,29 @@ module ProcesadorDeImagenes(
    // signal declaration
    wire tx_full, rx_empty, btn_tick;
    wire [7:0] rec_data, rec_data1;
-
+	wire clk_retras;
+	
    // body
    // instantiate uart
    uart uart_unit
       (.clk(clk), .reset(reset), .rd_uart(signal),
        .wr_uart(signal), .rx(rx), .w_data(rec_data1),
        .tx_full(tx_full), .rx_empty(rx_empty), 
-       .r_data(rec_data), .tx(tx));
-   // instantiate debounce circuit
+       .r_data(rec_data), .tx(tx), .tx_empty(tx_empty));
 
-	sincro sincronizador (.reset(reset), .clk(clk), rx_empty(rx_empty), .btn_tick(btn_tick), .signal(signal)); 
 
-	debounce btn_db_unit
-      (.clk(clk), .reset(reset), .sw(btn),
-       .db_level(), .db_tick(btn_tick));
+	sincro sincronizador (.reset(reset), .clk(clk), .rx_empty(rx_empty), .btn_tick(btn), .signal(signal)); 
 
+	//retrasadorHassenhoff retra (.clk_in(clk) , .clk_out(clk_retras));
+   
+	// instantiate debounce circuit
+	//debounce btn_db_unit(.clk(clk), .reset(reset), .sw(btn),.db_level(), .db_tick(btn_tick));
 
   // incremented data loops back
    assign rec_data1 = rec_data + 50;
    // LED display
    assign led = rec_data;
    assign an = 4'b1110;
-   assign sseg = {1'b1, ~tx_full, 2'b11, ~rx_empty, 3'b111};
+   assign sseg = {1'b1, ~tx_full, 2'b11, ~rx_empty, 3'b111, ~tx_empty};
 
 endmodule

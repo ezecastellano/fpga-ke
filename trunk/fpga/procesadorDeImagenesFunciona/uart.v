@@ -16,12 +16,13 @@ module uart
     input wire rd_uart, wr_uart, rx,
     input wire [7:0] w_data,
     output wire tx_full, rx_empty, tx,
+	 output wire tx_empty,
     output wire [7:0] r_data
    );
 
    // signal declaration
    wire tick, rx_done_tick, tx_done_tick;
-   wire tx_empty, tx_fifo_not_empty;
+   wire tx_fifo_not_empty;
    wire [7:0] tx_fifo_out, rx_data_out;
 
    //body
