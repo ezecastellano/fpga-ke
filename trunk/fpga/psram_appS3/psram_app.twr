@@ -1,0 +1,194 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml psram_app.twx psram_app.ncd -o psram_app.twr psram_app.pcf
+-ucf Nexys2_500General.ucf
+
+Design file:              psram_app.ncd
+Physical constraint file: psram_app.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock osc_clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+mem_data<0> |    3.650(R)|   -1.185(R)|clk_100           |   0.000|
+mem_data<1> |    4.360(R)|   -1.263(R)|clk_100           |   0.000|
+mem_data<2> |    3.723(R)|   -1.278(R)|clk_100           |   0.000|
+mem_data<3> |    5.008(R)|   -1.185(R)|clk_100           |   0.000|
+mem_data<4> |    4.813(R)|   -1.219(R)|clk_100           |   0.000|
+mem_data<5> |    4.541(R)|   -1.249(R)|clk_100           |   0.000|
+mem_data<6> |    4.560(R)|   -1.356(R)|clk_100           |   0.000|
+mem_data<7> |    4.857(R)|   -1.381(R)|clk_100           |   0.000|
+mem_data<8> |    3.753(R)|   -1.102(R)|clk_100           |   0.000|
+mem_data<9> |    3.919(R)|   -0.954(R)|clk_100           |   0.000|
+mem_data<10>|    4.245(R)|   -0.961(R)|clk_100           |   0.000|
+mem_data<11>|    4.448(R)|   -1.056(R)|clk_100           |   0.000|
+mem_data<12>|    4.001(R)|   -1.163(R)|clk_100           |   0.000|
+mem_data<13>|    4.297(R)|   -1.149(R)|clk_100           |   0.000|
+mem_data<14>|    4.372(R)|   -1.724(R)|clk_100           |   0.000|
+mem_data<15>|    5.164(R)|   -1.776(R)|clk_100           |   0.000|
+reset       |    5.416(R)|   -3.196(R)|clk_100           |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ps2_kbrd_clk
+-------------+------------+------------+------------------+--------+
+             |Max Setup to|Max Hold to |                  | Clock  |
+Source       | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------------+--------+
+ps2_kbrd_data|   -0.640(F)|    3.453(F)|ps2_kbrd_clk_BUFGP|   0.000|
+-------------+------------+------------+------------------+--------+
+
+Clock osc_clk to Pad
+------------+------------+---------------------------+--------+
+            | clk (edge) |                           | Clock  |
+Destination |   to PAD   |Internal Clock(s)          | Phase  |
+------------+------------+---------------------------+--------+
+b1          |    8.508(R)|clk_100                    |   0.000|
+            |   11.499(R)|pixel_clk                  |   0.000|
+b2          |    8.790(R)|clk_100                    |   0.000|
+            |   11.781(R)|pixel_clk                  |   0.000|
+g0          |    8.984(R)|clk_100                    |   0.000|
+            |   11.961(R)|pixel_clk                  |   0.000|
+g1          |    8.857(R)|clk_100                    |   0.000|
+            |   11.834(R)|pixel_clk                  |   0.000|
+g2          |    8.576(R)|clk_100                    |   0.000|
+            |   11.553(R)|pixel_clk                  |   0.000|
+hs          |    9.212(R)|pixel_clk                  |   0.000|
+mem_addr<0> |    5.554(R)|clk_100                    |   0.000|
+mem_addr<1> |    5.561(R)|clk_100                    |   0.000|
+mem_addr<2> |    5.317(R)|clk_100                    |   0.000|
+mem_addr<3> |    5.287(R)|clk_100                    |   0.000|
+mem_addr<4> |    5.364(R)|clk_100                    |   0.000|
+mem_addr<5> |    5.555(R)|clk_100                    |   0.000|
+mem_addr<6> |    5.292(R)|clk_100                    |   0.000|
+mem_addr<7> |    5.040(R)|clk_100                    |   0.000|
+mem_addr<8> |    5.869(R)|clk_100                    |   0.000|
+mem_addr<9> |    5.762(R)|clk_100                    |   0.000|
+mem_addr<10>|    5.297(R)|clk_100                    |   0.000|
+mem_addr<11>|    5.576(R)|clk_100                    |   0.000|
+mem_addr<12>|    5.631(R)|clk_100                    |   0.000|
+mem_addr<13>|    5.802(R)|clk_100                    |   0.000|
+mem_addr<14>|    5.961(R)|clk_100                    |   0.000|
+mem_addr<15>|    6.600(R)|clk_100                    |   0.000|
+mem_addr<16>|    6.326(R)|clk_100                    |   0.000|
+mem_addr<17>|    6.784(R)|clk_100                    |   0.000|
+mem_addr<18>|    6.408(R)|clk_100                    |   0.000|
+mem_addr<19>|    5.910(R)|clk_100                    |   0.000|
+mem_addr<20>|    6.465(R)|clk_100                    |   0.000|
+mem_addr<21>|    6.075(R)|clk_100                    |   0.000|
+mem_addr<22>|    6.078(R)|clk_100                    |   0.000|
+mem_adv_n   |    8.225(R)|clk_100                    |   0.000|
+mem_ce_n    |    9.611(R)|clk_100                    |   0.000|
+mem_clk     |    3.707(R)|psram_ctrlr_inst/clk_50    |   0.000|
+            |    6.366(R)|psram_ctrlr_inst/clk_50_inv|   0.000|
+mem_cre     |    8.934(R)|clk_100                    |   0.000|
+mem_data<0> |    7.239(R)|clk_100                    |   0.000|
+mem_data<1> |    7.747(R)|clk_100                    |   0.000|
+mem_data<2> |    8.023(R)|clk_100                    |   0.000|
+mem_data<3> |    8.080(R)|clk_100                    |   0.000|
+mem_data<4> |    8.348(R)|clk_100                    |   0.000|
+mem_data<5> |    8.604(R)|clk_100                    |   0.000|
+mem_data<6> |    8.606(R)|clk_100                    |   0.000|
+mem_data<7> |    9.106(R)|clk_100                    |   0.000|
+mem_data<8> |    7.483(R)|clk_100                    |   0.000|
+mem_data<9> |    7.996(R)|clk_100                    |   0.000|
+mem_data<10>|    7.829(R)|clk_100                    |   0.000|
+mem_data<11>|    8.092(R)|clk_100                    |   0.000|
+mem_data<12>|    7.485(R)|clk_100                    |   0.000|
+mem_data<13>|    8.346(R)|clk_100                    |   0.000|
+mem_data<14>|    8.857(R)|clk_100                    |   0.000|
+mem_data<15>|    9.396(R)|clk_100                    |   0.000|
+mem_lb_n    |    6.018(R)|clk_100                    |   0.000|
+mem_oe_n    |    9.790(R)|clk_100                    |   0.000|
+mem_ub_n    |    5.312(R)|clk_100                    |   0.000|
+mem_we_n    |    8.973(R)|clk_100                    |   0.000|
+r0          |    9.386(R)|clk_100                    |   0.000|
+            |   12.363(R)|pixel_clk                  |   0.000|
+r1          |    8.858(R)|clk_100                    |   0.000|
+            |   11.835(R)|pixel_clk                  |   0.000|
+r2          |    7.719(R)|clk_100                    |   0.000|
+            |   10.696(R)|pixel_clk                  |   0.000|
+segm<1>     |   11.634(R)|clk_10                     |   0.000|
+            |   11.417(R)|clk_100                    |   0.000|
+segm<2>     |   11.115(R)|clk_10                     |   0.000|
+            |   11.171(R)|clk_100                    |   0.000|
+segm<3>     |   11.369(R)|clk_10                     |   0.000|
+            |   11.425(R)|clk_100                    |   0.000|
+segm<4>     |   11.902(R)|clk_10                     |   0.000|
+            |   11.725(R)|clk_100                    |   0.000|
+segm<5>     |   11.508(R)|clk_10                     |   0.000|
+            |   11.564(R)|clk_100                    |   0.000|
+segm<6>     |   10.935(R)|clk_10                     |   0.000|
+            |   10.991(R)|clk_100                    |   0.000|
+segm<7>     |   11.783(R)|clk_10                     |   0.000|
+            |   11.839(R)|clk_100                    |   0.000|
+segm_sel<0> |    5.865(R)|clk_10                     |   0.000|
+segm_sel<1> |    6.087(R)|clk_10                     |   0.000|
+segm_sel<2> |    6.816(R)|clk_10                     |   0.000|
+segm_sel<3> |    6.147(R)|clk_10                     |   0.000|
+vs          |    9.760(R)|pixel_clk                  |   0.000|
+------------+------------+---------------------------+--------+
+
+Clock to Setup on destination clock osc_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+osc_clk        |   13.069|    7.421|         |         |
+ps2_kbrd_clk   |         |    9.047|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ps2_kbrd_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ps2_kbrd_clk   |         |         |         |    4.044|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Sep 04 11:35:00 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 180 MB
+
+
+

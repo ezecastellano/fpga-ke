@@ -1,0 +1,14 @@
+MO seven_seg NULL seven_seg.v vlg6F/seven__seg.bin 1346769178
+MO bram_dual NULL bram_dual.v vlg27/bram__dual.bin 1346769178
+MO program1 NULL program1.V vlg19/program1.bin 1346769178
+MO dcm_50_a_100 NULL dcm_50_a_100.v vlg68/dcm__50__a__100.bin 1346769178
+MO psram_app NULL psram_app.v vlg57/psram__app.bin 1346769178
+AR keyboard_interface behavioral E:/psram_appS3/keyboard_interface.vhd sub00/vhpl01 1346769179
+MO dualport_frontend NULL dulaport_frontend.v vlg66/dualport__frontend.bin 1346769178
+MO kcpsm3 NULL kcpsm3.v vlg19/kcpsm3.bin 1346769178
+MO vga_800x600 NULL vga_800x600.v vlg73/vga__800x600.bin 1346769178
+MO clk_dcm NULL clk_dcm.v vlg15/clk__dcm.bin 1346769178
+EN keyboard_interface NULL E:/psram_appS3/keyboard_interface.vhd sub00/vhpl00 1346769178
+MO video_pipeline NULL video_pipeline.v vlg70/video__pipeline.bin 1346769178
+MO picoblaze NULL picoblaze.v vlg19/picoblaze.bin 1346769178
+MO psram_ctrlr NULL psram_ctrlr.v vlg15/psram__ctrlr.bin 1346769178

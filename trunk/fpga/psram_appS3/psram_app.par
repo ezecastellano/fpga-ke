@@ -1,0 +1,267 @@
+Release 14.1 par P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WS03LAB05::  Tue Sep 04 11:34:29 2012
+
+par -w -intstyle ise -ol high -t 1 psram_app_map.ncd psram_app.ncd
+psram_app.pcf 
+
+
+Constraints file: psram_app.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.1\ISE_DS\ISE\.
+   "psram_app" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2012-04-23".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          73 out of 232    31%
+
+   Number of External Input IOBs                  4
+
+      Number of External Input IBUFs              4
+        Number of LOCed External Input IBUFs      4 out of 4     100%
+
+
+   Number of External Output IOBs                53
+
+      Number of External Output IOBs             53
+        Number of LOCed External Output IOBs     53 out of 53    100%
+
+
+   Number of External Bidir IOBs                 16
+
+      Number of External Bidir IOBs              16
+        Number of LOCed External Bidir IOBs      16 out of 16    100%
+
+
+   Number of BUFGMUXs                        8 out of 24     33%
+   Number of DCMs                            2 out of 4      50%
+   Number of RAMB16s                         2 out of 20     10%
+   Number of Slices                        408 out of 4656    8%
+      Number of SLICEMs                     35 out of 2328    1%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:ff88c71b) REAL time: 3 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:ff88c71b) REAL time: 3 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:ff88c71b) REAL time: 3 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+..................
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
+   clock site pair. The clock component <ps2_kbrd_clk_BUFGP/BUFG> is placed at site <BUFGMUX_X2Y11>. The IO component
+   <ps2_kbrd_clk> is placed at site <R12>.  This will not allow the use of the fast path between the IO and the Clock
+   buffer. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <ps2_kbrd_clk.PAD>
+   allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
+   The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that
+   this error condition be corrected in the design.
+WARNING:Place:963 - A DCM / BUFGCTRL clock component pair have been found that are not placed at an optimal DCM /
+   BUFGCTRL site pair. The DCM component <psram_ctrlr_inst/clk_dcm_inst/dcm_sp_inst> is locked to site <DCM_X1Y0> and
+   the corresponding BUFGCTRL component <psram_ctrlr_inst/clk_dcm_inst/clkout2_buf> is locked to site <BUFGMUX_X2Y10>.
+   This will not allow the usage of the fast path between the DCM and the Clock buffer. This is normally an ERROR but
+   the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <psram_ctrlr_inst/clk_dcm_inst/dcm_sp_inst.CLK180>
+   allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
+   The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that
+   this error condition be corrected in the design.
+Phase 4.2  Initial Clock and IO Placement (Checksum:b81f6269) REAL time: 5 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:b81f6269) REAL time: 5 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:b81f6269) REAL time: 5 secs 
+
+Phase 7.8  Global Placement
+...........................
+.......
+......................................................
+.........................................
+.................................
+Phase 7.8  Global Placement (Checksum:1f091217) REAL time: 7 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:1f091217) REAL time: 7 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:739d4a4f) REAL time: 9 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:739d4a4f) REAL time: 9 secs 
+
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 9 secs 
+Writing design to file psram_app.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 3058 unrouted;      REAL time: 15 secs 
+
+Phase  2  : 2772 unrouted;      REAL time: 15 secs 
+
+Phase  3  : 534 unrouted;      REAL time: 15 secs 
+
+Phase  4  : 608 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+
+Updating file: psram_app.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+WARNING:Route:455 - CLK Net:picoblaze_inst/keyboard_interface_inst/slow_clk may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 26 secs 
+Total CPU time to Router completion: 25 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|             clk_100 |  BUFGMUX_X2Y0| No   |  182 |  0.073     |  0.190      |
++---------------------+--------------+------+------+------------+-------------+
+|              clk_10 |  BUFGMUX_X1Y1| No   |   18 |  0.030     |  0.152      |
++---------------------+--------------+------+------+------------+-------------+
+|           pixel_clk |  BUFGMUX_X2Y1| No   |   26 |  0.040     |  0.185      |
++---------------------+--------------+------+------+------------+-------------+
+|psram_ctrlr_inst/clk |              |      |      |            |             |
+|             _50_inv | BUFGMUX_X2Y10| No   |    2 |  0.036     |  0.171      |
++---------------------+--------------+------+------+------------+-------------+
+|psram_ctrlr_inst/clk |              |      |      |            |             |
+|                 _50 |  BUFGMUX_X1Y0| No   |    3 |  0.039     |  0.171      |
++---------------------+--------------+------+------+------------+-------------+
+|  ps2_kbrd_clk_BUFGP | BUFGMUX_X2Y11| No   |    7 |  0.032     |  0.156      |
++---------------------+--------------+------+------+------------+-------------+
+|picoblaze_inst/keybo |              |      |      |            |             |
+|ard_interface_inst/s |              |      |      |            |             |
+|             low_clk |         Local|      |    3 |  0.000     |  1.212      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    13.069ns|     N/A|           0
+  _100                                      | HOLD        |     0.770ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.713ns|     N/A|           0
+  _10                                       | HOLD        |     1.278ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net pix | SETUP       |         N/A|     6.686ns|     N/A|           0
+  el_clk                                    | HOLD        |     1.426ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net psr | SETUP       |         N/A|     1.476ns|     N/A|           0
+  am_ctrlr_inst/clk_50_inv                  | HOLD        |     1.028ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net psr | SETUP       |         N/A|     1.474ns|     N/A|           0
+  am_ctrlr_inst/clk_50                      | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ps2 | SETUP       |         N/A|     4.044ns|     N/A|           0
+  _kbrd_clk_BUFGP                           | HOLD        |     1.011ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net pic | SETUP       |         N/A|     2.224ns|     N/A|           0
+  oblaze_inst/keyboard_interface_inst/slow_ | HOLD        |     1.543ns|            |       0|           0
+  clk                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 26 secs 
+Total CPU time to PAR completion: 25 secs 
+
+Peak Memory Usage:  281 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 3
+Number of info messages: 1
+
+Writing design to file psram_app.ncd
+
+
+
+PAR done!

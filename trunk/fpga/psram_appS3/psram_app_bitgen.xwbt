@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\psram_appS3\psram_app.ncd
+OUTFILE=E:\psram_appS3\psram_app.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=E:\psram_appS3
+LICENSE=ISE
+USER_INFO=175494804_177428606_177428608_726
