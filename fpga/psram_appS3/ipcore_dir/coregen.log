@@ -1,0 +1,19 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'C:\Xilinx\13.2\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'dcm_50_a_100' of
+   'xilinx.com:ip:dcm_sp:13.1' from
+   'C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\arwz.exe'.
+Customizing IP...
+Architecture Wizard completed successfully.
+Finished Customizing.
+Resolving generic values...
+Finished resolving generic values.
+Generating ASY schematic symbol...
+WARNING:sim - The chosen IP does not support an ASY schematic symbol.
+WARNING:sim - The chosen IP does not support an SYM schematic symbol.
+Generating FLIST file...
+INFO:sim - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'dcm_50_a_100'.

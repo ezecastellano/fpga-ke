@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+dcm_50_a_100 instance_name (
+    .CLKIN_IN(CLKIN_IN), 
+    .RST_IN(RST_IN), 
+    .CLKIN_IBUFG_OUT(CLKIN_IBUFG_OUT), 
+    .CLK0_OUT(CLK0_OUT), 
+    .CLK2X_OUT(CLK2X_OUT)
+    );
+
+

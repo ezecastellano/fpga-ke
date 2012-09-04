@@ -1,0 +1,200 @@
+; constants
+CONSTANT read_strobe,08
+CONSTANT write_strobe,04
+CONSTANT red,E0
+CONSTANT yellow,D8
+CONSTANT green,1C
+CONSTANT blue,03
+CONSTANT white,FF
+CONSTANT black,00
+CONSTANT rojoazul, C3
+
+; registers
+NAMEREG s0,data_lo
+NAMEREG s1,data_hi
+NAMEREG s2, counter_lo
+NAMEREG s3,counter_hi
+NAMEREG s4,color2
+NAMEREG s5,write
+NAMEREG s6,data_in
+NAMEREG s7,zero
+NAMEREG s8,read
+NAMEREG s9,color1
+;
+NAMEREG sA,rd_addr_lo
+NAMEREG sB,rd_addr_mi
+NAMEREG sC,rd_addr_hi
+NAMEREG sD,wr_addr_lo
+NAMEREG sE,wr_addr_mi
+NAMEREG sF,wr_addr_hi
+
+
+ADDRESS 000
+
+;jump halt
+
+LOAD rd_addr_hi,00
+LOAD rd_addr_mi,00
+LOAD rd_addr_lo,00
+LOAD wr_addr_hi,00
+LOAD wr_addr_mi,00
+LOAD wr_addr_lo,00
+LOAD counter_lo,00
+LOAD counter_hi,00
+LOAD read,read_strobe
+LOAD write,write_strobe
+LOAD zero,00
+LOAD color1,white
+LOAD color2,rojoazul
+LOAD data_lo,color1
+LOAD data_hi,color1
+;ENABLE INTERRUPT
+
+main:
+	CALL read_word
+	;COMPARE data_lo,color2
+	;CALL Z,change_color 
+	CALL change_color2
+	CALL inc_counters
+	;COMPARE counter_hi,FF
+	;CALL Z,swap_colors
+	CALL image_read1
+	OUTPUT color1,08
+	OUTPUT color2,07
+	JUMP main
+;
+;
+
+read_word:
+	OUTPUT rd_addr_lo,02
+	OUTPUT rd_addr_mi,03
+	OUTPUT rd_addr_hi,04
+	OUTPUT read,05
+	wait_op_done_rd:
+		INPUT data_in,06
+		COMPARE data_in,01
+		JUMP NZ,wait_op_done_rd
+	OUTPUT zero,06
+	INPUT data_lo,00
+	INPUT data_hi,01
+	RETURN
+;
+
+write_word:
+	OUTPUT data_lo,00
+	OUTPUT data_hi,01
+	OUTPUT wr_addr_lo,02
+	OUTPUT wr_addr_mi,03
+	OUTPUT wr_addr_hi,04
+	OUTPUT write,05
+	wait_op_done_wr:
+		INPUT data_in,06
+		COMPARE data_in,01
+		JUMP NZ,wait_op_done_wr
+	OUTPUT zero,06
+	RETURN
+;
+
+inc_counters:
+	ADD counter_lo,01
+	ADDCY counter_hi,00
+	ADD rd_addr_lo,01
+	ADDCY rd_addr_mi,00
+	ADDCY rd_addr_hi,00
+	ADD wr_addr_lo,01
+	ADDCY wr_addr_mi,00
+	ADDCY wr_addr_hi,00
+	RETURN
+;
+
+image_read1:
+	COMPARE rd_addr_lo, 80
+	CALL Z, image_read2
+	RETURN
+
+image_read2:
+	COMPARE rd_addr_mi, A9
+	CALL Z, image_read3
+	RETURN
+
+image_read3:
+	COMPARE rd_addr_hi, 03
+	CALL Z, swap_colors2
+	RETURN
+	
+
+change_color2:
+;	XOR data_lo, FF
+;	XOR data_hi, FF
+	CALL write_word
+	RETURN
+
+change_color:
+	LOAD data_lo,color1
+	LOAD data_hi,color1
+	CALL write_word
+	RETURN
+;
+
+delay:
+	;DISABLE INTERRUPT
+	LOAD read,00
+	LOAD write,00
+	loop1:
+		ADD zero,01
+		ADDCY read,00
+		ADDCY write,00
+		JUMP NC,loop1
+	LOAD read,read_strobe
+	LOAD write,write_strobe
+	LOAD zero,00
+;	ENABLE INTERRUPT
+	RETURN
+;
+
+swap_colors2:
+	CALL delay
+	LOAD rd_addr_hi,00
+	LOAD rd_addr_mi,00
+	LOAD rd_addr_lo,00
+	LOAD wr_addr_hi,00
+	LOAD wr_addr_mi,00
+	LOAD wr_addr_lo,00
+	LOAD counter_lo,00
+	LOAD counter_hi,00
+	RETURN
+
+swap_colors:
+	CALL delay
+	XOR color1,color2
+	XOR color2,color1
+	XOR color1,color2
+	LOAD data_lo,color1
+	LOAD data_hi,color1
+	LOAD rd_addr_hi,00
+	LOAD rd_addr_mi,00
+	LOAD rd_addr_lo,00
+	LOAD wr_addr_hi,00
+	LOAD wr_addr_mi,00
+	LOAD wr_addr_lo,00
+	LOAD counter_lo,00
+	LOAD counter_hi,00
+	RETURN
+;
+
+halt:
+	JUMP halt
+;
+
+;isr:
+;	INPUT zero,07
+;	OUTPUT zero,07
+;	OUTPUT zero,08
+;	LOAD zero,00
+;	RETURNI enable
+
+
+
+;ADDRESS 3FF
+;JUMP isr
+

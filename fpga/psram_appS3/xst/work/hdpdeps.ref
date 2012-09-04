@@ -1,0 +1,6 @@
+V3 3
+FL E:/psram_appS3/keyboard_interface.vhd 2012/08/28.10:51:08 P.15xf
+EN work/keyboard_interface 1346769178 FL E:/psram_appS3/keyboard_interface.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/keyboard_interface/Behavioral 1346769179 \
+      FL E:/psram_appS3/keyboard_interface.vhd EN work/keyboard_interface 1346769178
