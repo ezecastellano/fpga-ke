@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Patricia/Patricia/Co-Disenio/TEST/test/psram_ctrlr.xst" -ofn "C:/Users/Patricia/Patricia/Co-Disenio/TEST/test/psram_ctrlr.syr" 

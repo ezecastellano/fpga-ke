@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Patricia\Patricia\Co-Disenio\TEST\test\psram_app.ncd
+OUTFILE=C:\Users\Patricia\Patricia\Co-Disenio\TEST\test\psram_app.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Patricia\Patricia\Co-Disenio\TEST\test
+LICENSE=ISE
+USER_INFO=175494804_177428606_177428608_123

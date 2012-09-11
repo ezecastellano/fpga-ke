@@ -1,0 +1,2 @@
+verilog work "clk_dcm.v"
+verilog work "psram_ctrlr.v"
