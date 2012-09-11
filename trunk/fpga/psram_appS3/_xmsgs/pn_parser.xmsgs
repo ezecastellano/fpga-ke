@@ -8,5 +8,53 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/bram_dual.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/clk_dcm.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/dulaport_frontend.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/kcpsm3.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/keyboard_interface.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/picoblaze.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/program1.V&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/psram_app.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/psram_app.v</arg>&quot; Line <arg fmt="%d" index="2">26</arg>. <arg fmt="%s" index="3">Include file found: &apos;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/defines.v&apos; in file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/psram_app.v&quot; line 26
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/psram_ctrlr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/psram_ctrlr.v</arg>&quot; Line <arg fmt="%d" index="2">32</arg>. <arg fmt="%s" index="3">Include file found: &apos;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/./defines.v&apos; in file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/psram_ctrlr.v&quot; line 32
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/seven_seg.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/vga_800x600.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/vga_800x600.v</arg>&quot; Line <arg fmt="%d" index="2">13</arg>. <arg fmt="%s" index="3">Include file found: &apos;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/defines.v&apos; in file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/vga_800x600.v&quot; line 13
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;//dc3.ad.dc.uba.ar/RedirectedFolders06/kborgna/Desktop/fpga-ultimo/fpga/psram_appS3/video_pipeline.v&quot; into library work</arg>
+</msg>
+
 </messages>
 
