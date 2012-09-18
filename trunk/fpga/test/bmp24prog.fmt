@@ -1,0 +1,164 @@
+                  ; constants
+                  CONSTANT read_strobe, 08
+                  CONSTANT write_strobe, 04
+                  CONSTANT red, E0
+                  CONSTANT yellow, D8
+                  CONSTANT green, 1C
+                  CONSTANT blue, 03
+                  CONSTANT white, FF
+                  CONSTANT black, 00
+                  CONSTANT rojoazul, C3
+                  CONSTANT magenta, E3
+                  ; registers
+                  NAMEREG s0, data_lo
+                  NAMEREG s1, data_hi
+                  NAMEREG s2, counter_lo
+                  NAMEREG s3, counter_hi
+                  ;;;;;;;;;;;;;NAMEREG s4,color2
+                  NAMEREG s5, write
+                  NAMEREG s6, data_in
+                  NAMEREG s7, zero
+                  NAMEREG s8, read
+                  ;;;;;;;;;;;;;NAMEREG s9,color1
+                  NAMEREG sA, rd_addr_lo
+                  NAMEREG sB, rd_addr_mi
+                  NAMEREG sC, rd_addr_hi
+                  NAMEREG sD, wr_addr_lo
+                  NAMEREG sE, wr_addr_mi
+                  NAMEREG sF, wr_addr_hi
+                  ADDRESS 000
+                  ;jump halt
+                  LOAD rd_addr_hi, 00
+                  LOAD rd_addr_mi, 00
+                  LOAD rd_addr_lo, 00
+                  LOAD wr_addr_hi, 00
+                  LOAD wr_addr_mi, 00
+                  LOAD wr_addr_lo, 00
+                  LOAD counter_lo, 00
+                  LOAD counter_hi, 00
+                  LOAD read, read_strobe
+                  LOAD write, write_strobe
+                  LOAD zero, 00
+                  LOAD data_lo, 00
+                  LOAD data_hi, 00
+                  ;ENABLE INTERRUPT
+            main: 
+                  ; Setear la ultima direccion desde la que vamos a empezar
+                  CALL ultima_direccion
+           main2: 
+                  CALL read_word
+                  CALL change_color
+                  CALL dec_counters
+                  COMPARE rd_addr_lo, 1A       ; Como decremento antes no tengo que usar 1B sino 1A
+                  JUMP NZ, main2
+           comp2: COMPARE rd_addr_mi, 00
+                  JUMP NZ, main2
+           comp3: COMPARE rd_addr_hi, 00
+                  JUMP NZ, main2
+                  JUMP nada                    ; Ya termine de recorrer la imagen => no la vuelvo a recorrer
+            nada: 
+                  JUMP nada
+       read_word: 
+                  OUTPUT rd_addr_lo, 02
+                  OUTPUT rd_addr_mi, 03
+                  OUTPUT rd_addr_hi, 04
+                  OUTPUT read, 05
+ wait_op_done_rd: 
+                  INPUT data_in, 06
+                  COMPARE data_in, 01
+                  JUMP NZ, wait_op_done_rd
+                  OUTPUT zero, 06
+                  INPUT data_lo, 00
+                  INPUT data_hi, 01
+                  RETURN 
+                  ;
+      write_word: 
+                  OUTPUT data_lo, 00
+                  OUTPUT data_hi, 01
+                  OUTPUT wr_addr_lo, 02
+                  OUTPUT wr_addr_mi, 03
+                  OUTPUT wr_addr_hi, 04
+                  OUTPUT write, 05
+ wait_op_done_wr: 
+                  INPUT data_in, 06
+                  COMPARE data_in, 01
+                  JUMP NZ, wait_op_done_wr
+                  OUTPUT zero, 06
+                  RETURN 
+                  ;
+                  ;
+    dec_counters: 
+                  ADD counter_lo, 01
+                  ADDCY counter_hi, 00
+                  SUB rd_addr_lo, 01
+                  SUBCY rd_addr_mi, 00
+                  SUBCY rd_addr_hi, 00
+                  SUB wr_addr_lo, 01
+                  SUBCY wr_addr_mi, 00
+                  SUBCY wr_addr_hi, 00
+                  RETURN 
+                  ;
+    change_color: 
+                  XOR data_lo, FF
+                  XOR data_hi, FF
+                  CALL write_word
+                  RETURN 
+                  ;
+           delay: 
+                  ;DISABLE INTERRUPT
+                  LOAD read, 00
+                  LOAD write, 00
+           loop1: 
+                  ADD zero, 01
+                  ADDCY read, 00
+                  ADDCY write, 00
+                  JUMP NC, loop1
+                  LOAD read, read_strobe
+                  LOAD write, write_strobe
+                  LOAD zero, 00
+                  RETURN 
+ultima_direccion: 
+                  ; Registros disponibles s4 y s9 wr_addr_lo wr_addr_mi wr_addr_hi
+                  ; Cargar el ancho en s4 y s9
+                  LOAD rd_addr_hi, 00
+                  LOAD rd_addr_mi, 00
+                  LOAD rd_addr_lo, 09
+                  CALL read_word
+                  LOAD s4, data_lo
+                  LOAD s9, data_hi
+                  ; Cargar el alto en sE y sD
+                  LOAD rd_addr_lo, 0B
+                  CALL read_word
+                  LOAD wr_addr_lo, data_lo
+                  LOAD wr_addr_mi, data_hi
+                  ; Inicializar la ultima direccion en 0
+                  LOAD rd_addr_lo, 00
+           ciclo: 
+                  COMPARE s9, 00               ; La parte alta del ancho es 0?
+                  JUMP NZ, suma_general        ; Es distinta => tengo que seguir iterando
+                  COMPARE s4, 00               ; La parte baja del ancho es 0?
+                  JUMP Z, fin                  ; La parte baja es 0, termine de iterar
+                  ; La parte baja es distinta de 0 => tengo que seguir iterando
+    suma_general: 
+                  CALL suma_aux
+                  CALL suma_aux
+                  CALL suma_aux
+                  ; Decremento 1 del ancho por cada llamada a suma_general
+                  SUB s4, 01
+                  SUBCY s9, 00
+                  JUMP ciclo
+        suma_aux: 
+                  ; Le agrego a la ultima direccion tantos pixels como alto
+                  ADD rd_addr_lo, wr_addr_lo
+                  ADDCY rd_addr_mi, wr_addr_mi
+                  ADDCY rd_addr_hi, 00
+                  RETURN 
+             fin: 
+                  ; Falta dividir por 2!!!!!!
+                  SR0 rd_addr_mi
+                  SRA rd_addr_lo
+                  ; La direccion de escritura empieza como la de lectura
+                  LOAD wr_addr_lo, rd_addr_lo
+                  LOAD wr_addr_mi, rd_addr_mi
+                  LOAD wr_addr_hi, rd_addr_hi
+                  RETURN 

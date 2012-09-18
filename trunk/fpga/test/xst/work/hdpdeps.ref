@@ -1,0 +1,6 @@
+V3 3
+FL E:/test/test/keyboard_interface.vhd 2012/03/12.20:27:22 P.15xf
+EN work/keyboard_interface 1347975122 FL E:/test/test/keyboard_interface.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/keyboard_interface/Behavioral 1347975123 \
+      FL E:/test/test/keyboard_interface.vhd EN work/keyboard_interface 1347975122

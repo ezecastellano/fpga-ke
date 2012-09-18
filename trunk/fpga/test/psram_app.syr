@@ -1,16 +1,16 @@
-Release 13.2 - xst O.61xd (nt64)
-Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: psram_app.prj
 
@@ -125,8 +125,9 @@ Module <psram_app> compiled
 No errors in compilation
 Analysis of file <"psram_app.prj"> succeeded.
  
-Compiling vhdl file "C:/Users/Patricia/Patricia/Co-Disenio/TEST/test/keyboard_interface.vhd" in Library work.
-Architecture behavioral of Entity keyboard_interface is up to date.
+Compiling vhdl file "E:/test/test/keyboard_interface.vhd" in Library work.
+Entity <keyboard_interface> compiled.
+Entity <keyboard_interface> (Architecture <Behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -145,7 +146,7 @@ Analyzing hierarchy for module <kcpsm3> in library <work>.
 
 Analyzing hierarchy for module <bmp24prog> in library <work>.
 
-Analyzing hierarchy for entity <keyboard_interface> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <keyboard_interface> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for module <seven_seg> in library <work>.
 
@@ -630,7 +631,7 @@ Analyzing module <bmp24prog> in library <work>.
 Module <bmp24prog> is correct for synthesis.
  
     Set user-defined property "INIT =  00000" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INITP_00 =  00000000000000000000080D50B095556B4AAA82D2AA00080FEBDDDFC0000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INITP_00 =  0000000000000202A575FF740C0C080D50B095556B4AAA82D2ABF777FC000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INITP_02 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INITP_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
@@ -638,13 +639,13 @@ Module <bmp24prog> is correct for synthesis.
     Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INITP_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INIT_00 =  00291190109004C309FF070005040808030002000D360E000F000A360B000C00" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INIT_01 =  F490F940401D400F401DC407C908001E541C4C0A541C4BFC541C4A9B003F0048" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INIT_02 =  542D46014606C805CC04CB03CA02A0000D360E000F000A360B000C00A000F940" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INIT_03 =  8201A000C706543A46014606C505CF04CE03CD02C101C000A00041014000C706" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INIT_04 =  A800870105000800A0000034E1FFE0FFA000AF00AE008D01AC00AB008A01A300" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000A0000700050408085C4EA500" for instance <ram_1024_x_18> in unit <bmp24prog>.
-    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INIT_00 =  00380019004601000000070005040808030002000D000E000F000A000B000C00" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INIT_01 =  541D46014606C805CC04CB03CA0240184018540E4C00540E4B00540E4A1A002F" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INIT_02 =  8201A000C706542A46014606C505CF04CE03CD02C101C000A00041014000C706" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INIT_03 =  A800870105000800A0000024E1FFE0FFA000EF00EE00CD01EC00EB00CA01A300" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INIT_04 =  1E101D0000190A0B1910140000190A090B000C00A0000700050408085C3EA500" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INIT_05 =  0B0EA000AC00BBE09AD04051E900C401005B005B005B505F4400545549000A00" for instance <ram_1024_x_18> in unit <bmp24prog>.
+    Set user-defined property "INIT_06 =  00000000000000000000000000000000000000000000A0001FC01EB01DA00A08" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
@@ -704,7 +705,7 @@ Module <bmp24prog> is correct for synthesis.
     Set user-defined property "INIT_3F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "SRVAL =  00000" for instance <ram_1024_x_18> in unit <bmp24prog>.
     Set user-defined property "WRITE_MODE =  WRITE_FIRST" for instance <ram_1024_x_18> in unit <bmp24prog>.
-Analyzing Entity <keyboard_interface> in library <work> (Architecture <behavioral>).
+Analyzing Entity <keyboard_interface> in library <work> (Architecture <Behavioral>).
 Entity <keyboard_interface> analyzed. Unit <keyboard_interface> generated.
 
 Analyzing module <seven_seg> in library <work>.
@@ -718,7 +719,7 @@ Module <seven_seg> is correct for synthesis.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <keyboard_interface>.
-    Related source file is "C:/Users/Patricia/Patricia/Co-Disenio/TEST/test/keyboard_interface.vhd".
+    Related source file is "E:/test/test/keyboard_interface.vhd".
 WARNING:Xst:646 - Signal <input_buffer<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 4-bit up counter for signal <bit_counter>.
     Found 8-bit register for signal <code_reg1>.
@@ -1098,8 +1099,8 @@ Delay:               14.230ns (Levels of Logic = 12)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S18:CLK->DO7   10   2.800   0.882  picoblaze_inst/program_rom_inst/ram_1024_x_18 (picoblaze_inst/instruction<7>)
-     RAM16X1D:DPRA3->DPO    1   0.704   0.455  picoblaze_inst/kcpsm3_inst/reg_loop_register_bit_4 (picoblaze_inst/kcpsm3_inst/sy<4>)
+     RAMB16_S18:CLK->DO4   10   2.800   0.882  picoblaze_inst/program_rom_inst/ram_1024_x_18 (picoblaze_inst/instruction<4>)
+     RAM16X1D:DPRA0->DPO    1   0.704   0.455  picoblaze_inst/kcpsm3_inst/reg_loop_register_bit_4 (picoblaze_inst/kcpsm3_inst/sy<4>)
      LUT3:I2->O           19   0.704   1.089  picoblaze_inst/kcpsm3_inst/operand_select_mux_4 (picoblaze_inst/port_id<4>)
      LUT4_D:I3->LO         1   0.704   0.179  picoblaze_inst/segm_34_and000011 (N204)
      LUT2:I1->O            8   0.704   0.761  picoblaze_inst/in_port_and00001 (picoblaze_inst/in_port_and0000)
@@ -1222,12 +1223,12 @@ Offset:              9.229ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.66 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.35 secs
  
 --> 
 
-Total memory usage is 277520 kilobytes
+Total memory usage is 282960 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  222 (   0 filtered)
