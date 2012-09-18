@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="nt64" product="ISE" version="13.2">
+<document OS="nt64" product="ISE" version="14.1">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Sun Sep 09 20:34:45 2012">
+  <application stringID="NgdBuild" timeStamp="Tue Sep 18 10:32:20 2012">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\13.2\ISE_DS\ISE\\lib\nt64;C:\Xilinx\13.2\ISE_DS\ISE\\bin\nt64;C:\Xilinx\13.2\ISE_DS\PlanAhead\bin;C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64;C:\Xilinx\13.2\ISE_DS\ISE\lib\nt64;C:\Xilinx\13.2\ISE_DS\EDK\bin\nt64;C:\Xilinx\13.2\ISE_DS\EDK\lib\nt64;C:\Xilinx\13.2\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\13.2\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\13.2\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\13.2\ISE_DS\common\bin\nt64;C:\Xilinx\13.2\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Sony\VAIO Startup Setting Tool;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Python27;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Internet Explorer"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.1\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.1\ISE_DS\ISE\lib\nt64;C:\Xilinx\Vivado\2012.1\bin;C:\Xilinx\14.1\ISE_DS\PlanAhead\bin;C:\Xilinx\14.1\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.1\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\arm\nt64\bin;C:\Xilinx\14.1\ISE_DS\common\bin\nt64;C:\Xilinx\14.1\ISE_DS\common\lib\nt64;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\SPSSInc\PASWModeler13\bin\;C:\Program Files (x86)\Haskell Platform\2011.4.0.0\lib\extralibs\bin;C:\Program Files (x86)\Haskell Platform\2011.4.0.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\DMIX;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files\MATLAB\R2010a\runtime\win64;C:\Program Files\MATLAB\R2010a\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\SAS\SharedFiles\Formats;C:\Program Files (x86)\WinSCP\;C:\Users\Administrador\AppData\Roaming\cabal\bin;C:\Program Files (x86)\CVSNT\"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,32 +20,40 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\13.2\ISE_DS\ISE\"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\"/>
         </row>
         <row stringID="row" value="3">
-          <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\13.2\ISE_DS\ISE"/>
+          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
+          <item stringID="value" value="C:\Xilinx\Xilinx.lic"/>
         </row>
         <row stringID="row" value="4">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\13.2\ISE_DS\EDK"/>
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="6">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\13.2\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\PlanAhead"/>
+        </row>
+        <row stringID="row" value="7">
+          <item stringID="variable" value="XILINX_VIVADO"/>
+          <item stringID="value" value="C:\Xilinx\Vivado\2012.1"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
         <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
-        <item stringID="User_EnvOsrelease" value="major release  (build 7600)"/>
+        <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
       </item>
-      <item stringID="User_EnvHost" value="Patricia-VAIO"/>
+      <item stringID="User_EnvHost" value="WS03LAB05"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i5 CPU       M 460  @ 2.53GHz"/>
-          <item stringID="speed" value="2527 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM)2 Quad CPU    Q9550  @ 2.83GHz"/>
+          <item stringID="speed" value="2833 MHz"/>
         </row>
       </table>
     </section>

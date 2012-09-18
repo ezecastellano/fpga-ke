@@ -1,0 +1,10 @@
+MO seven_seg NULL seven_seg.v vlg6F/seven__seg.bin 1347975122
+MO dcm_50_a_100 NULL dcm_50_a_100.v vlg68/dcm__50__a__100.bin 1347975122
+MO psram_app NULL psram_app.v vlg57/psram__app.bin 1347975122
+AR keyboard_interface behavioral E:/test/test/keyboard_interface.vhd sub00/vhpl01 1347975123
+MO kcpsm3 NULL kcpsm3.v vlg19/kcpsm3.bin 1347975122
+MO clk_dcm NULL clk_dcm.v vlg15/clk__dcm.bin 1347975122
+EN keyboard_interface NULL E:/test/test/keyboard_interface.vhd sub00/vhpl00 1347975122
+MO bmp24prog NULL bmp24prog.v vlg6D/bmp24prog.bin 1347975122
+MO picoblaze NULL picoblaze.v vlg19/picoblaze.bin 1347975122
+MO psram_ctrlr NULL psram_ctrlr.v vlg15/psram__ctrlr.bin 1347975122

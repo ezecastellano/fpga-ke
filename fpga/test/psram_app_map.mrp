@@ -1,4 +1,4 @@
-Release 13.2 Map O.61xd (nt64)
+Release 14.1 Map P.15xf (nt64)
 Xilinx Mapping Report File for Design 'psram_app'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sun Sep 09 20:34:50 2012
+Mapped Date    : Tue Sep 18 10:32:24 2012
 
 Design Summary
 --------------
@@ -46,9 +46,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.88
 
-Peak Memory Usage:  253 MB
-Total REAL time to MAP completion:  4 secs 
-Total CPU time to MAP completion:   3 secs 
+Peak Memory Usage:  263 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 

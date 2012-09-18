@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-09-11T10:41:36</DateModified>
+  <DateModified>2012-09-18T10:31:52</DateModified>
   <ModuleName>psram_app</ModuleName>
   <SummaryTimeStamp>2012-09-09T19:03:08</SummaryTimeStamp>
-  <SavedFilePath>E:/test/iseconfig/psram_app.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/test\</ImplementationReportsDirectory>
+  <SavedFilePath>E:/test/test/iseconfig/psram_app.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/test/test\</ImplementationReportsDirectory>
   <DateInitialized>2012-09-09T18:25:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
