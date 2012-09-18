@@ -8,5 +8,26 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/fpga-ke/fpga/test/psram_app.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">E:/fpga-ke/fpga/test/psram_app.v</arg>&quot; Line <arg fmt="%d" index="2">26</arg>. <arg fmt="%s" index="3">Include file found: &apos;E:/fpga-ke/fpga/test/defines.v&apos; in file &quot;E:/fpga-ke/fpga/test/psram_app.v&quot; line 26
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/fpga-ke/fpga/test/psram_ctrlr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">E:/fpga-ke/fpga/test/psram_ctrlr.v</arg>&quot; Line <arg fmt="%d" index="2">32</arg>. <arg fmt="%s" index="3">Include file found: &apos;E:/fpga-ke/fpga/test/./defines.v&apos; in file &quot;E:/fpga-ke/fpga/test/psram_ctrlr.v&quot; line 32
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/fpga-ke/fpga/test/vga_800x600.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">E:/fpga-ke/fpga/test/vga_800x600.v</arg>&quot; Line <arg fmt="%d" index="2">13</arg>. <arg fmt="%s" index="3">Include file found: &apos;E:/fpga-ke/fpga/test/defines.v&apos; in file &quot;E:/fpga-ke/fpga/test/vga_800x600.v&quot; line 13
+</arg>
+</msg>
+
 </messages>
 
